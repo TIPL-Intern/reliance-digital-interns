@@ -25,7 +25,7 @@ font-weight:500;
 }
 
 .buy-btn{
-background:#6b6f96;
+background:#1b1b20;
 color:white;
 border:none;
 padding:10px 25px;
@@ -53,7 +53,7 @@ border-radius:50%;
 font-size:20px;
 cursor:pointer;
 }
-body{
+.body{
 background:#f5f5f5;
 font-family:Arial;
 }
@@ -69,7 +69,7 @@ font-weight:bold;
 }   
 body{
 font-family: Arial;
-background:#f5f5f5;
+background:#988181;
 margin:0;
 padding:40px;
 }
@@ -175,17 +175,17 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Container */
+
 .container {
-  background-color: #f2f2f2;   /* light grey background */
+  background-color: #f2f2f2;   
   padding: 20px 30px;
 }
 
-/* Heading */
+
 .title {
   font-size: 28px;
   font-weight: 700;
-  color: #111;   /* dark black */
+  color: #111;  
   margin: 0;
 }
 body {
@@ -194,7 +194,7 @@ body {
   background: #f2f2f2;
 }
 
-/* Container (horizontal layout) */
+
 .card-container {
   display: flex;
   gap: 20px;
@@ -202,7 +202,7 @@ body {
   justify-content: center;
 }
 
-/* Card */
+
 .card {
   width: 250px;
   height: 320px;
@@ -214,7 +214,7 @@ body {
   border: 2px solid #5aa0d6;
 }
 
-/* Price tag */
+
 .price {
   position: absolute;
   top: 10px;
@@ -226,14 +226,14 @@ body {
   font-size: 14px;
 }
 
-/* Image */
+
 .card img {
-  width: 180px;
+  width: 200px;
   display: block;
   margin: 40px;
 }
 
-/* Ton button */
+
 .ton {
   position: absolute;
   bottom: 15px;
@@ -289,13 +289,13 @@ body {
   background: #f5f5f5;
 }
 
-/* SLIDER CONTAINER */
+
 .slider-container {
   position: relative;
   padding: 20px;
 }
 
-/* SLIDER */
+
 .product-slider {
   display: flex;
   gap: 20px;
@@ -303,7 +303,7 @@ body {
   scroll-behavior: smooth;
 }
 
-/* CARD */
+
 .card {
   min-width: 250px;
   background: #fff;
@@ -313,19 +313,19 @@ body {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-/* BADGE */
+
 .badge {
   position: absolute;
   top: 10px;
   left: 10px;
-  background: #0a7da6;
+  background: #007fad;
   color: #fff;
   padding: 5px 10px;
   font-size: 12px;
   border-radius: 6px;
 }
 
-/* HEART */
+
 .wishlist {
   position: absolute;
   top: 10px;
@@ -335,7 +335,7 @@ body {
   cursor: pointer;
 }
 
-/* IMAGE */
+
 .card img {
   width: 100%;
   height: 140px;
@@ -343,14 +343,14 @@ body {
   margin-top: 30px;
 }
 
-/* TITLE */
+
 .title {
   font-size: 14px;
   margin: 10px 0;
   color: #333;
 }
 
-/* PRICE */
+
 .price {
   font-size: 18px;
   font-weight: bold;
@@ -362,14 +362,14 @@ body {
   margin-left: 5px;
 }
 
-/* MRP */
+
 .mrp {
   text-decoration: line-through;
   color: gray;
   font-size: 13px;
 }
 
-/* NAV BUTTONS */
+
 .nav {
   position: absolute;
   top: 40%;
@@ -389,4 +389,176 @@ body {
 
 .right {
   right: 0;
+}
+
+body {
+    background-color: #eaeaea;   
+}
+
+.containerash {
+    width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: rgb(255, 254, 254);
+}
+.containerash span {
+    color: rgb(10, 10, 10);   
+    font-weight: 600 bold; 
+    max-height: 300px;
+    object-fit: contain;
+}
+.containerash h2{
+  color:rgb(236, 12, 12);
+  font-weight: 600 bold;
+ 
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(237, 18, 18);
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+.h3 {
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700px;
+}
+
+.ac-section{
+margin-top:40px;
+}
+.ac-section h2{
+font-size:26px;
+font-weight:700;
+}
+.sub-text{
+color:#555;
+margin-bottom:20px;
+}
+.products{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+
+}
+.card{
+background:#fff;
+border-radius:12px;
+padding:10px;
+width:22%;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+position:relative;
+}
+.badge{
+position:absolute;
+top:10px;
+left:10px;
+background:#007fad;
+color:white;
+padding:5px 10px;
+border-radius:5px;
+font-size:12px;
+}
+.card img{
+width:80%;
+height:150px;
+object-fit:absolute;
+margin-top:30px;
+background-color: #e5e3e3;
+border-radius:10px;
+
+}
+.card h4{
+font-size:10px;
+margin:15px 0;
+color: #888;
+}
+.price{
+font-size:18px;
+font-weight:bold;
+}
+.price span{
+color:green;
+font-size:14px;
+margin-left:5px;
+}
+.mrp{
+text-decoration:solid;
+color:#151515;
+font-size:20px;
+}
+.rating{
+color:orange;
+font-size:15px;
+
+}
+.tonac-section{
+margin-top:40px;
+}
+.tonac-section h2{
+font-size:26px;
+font-weight:700;
+.toncard{
+background:#fff;
+border-radius:12px;
+padding:10px;
+width: 22px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+position:relative;
+}
+.tonacproducts{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+.containertonac-section{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: rgb(118, 166, 214);
+  padding: 10px;
+}
+.image-accontainer{
+display: flex;
+size: 20px;
+}
+}
+.container {
+  display: flex;
+  gap: 10px;
+}
+
+.box {
+  background: rgb(244, 244, 244);
+  color: rgb(10, 10, 10);
+  padding: 50px;
+  text-align: center;
+   height: 200px;
+   width:40%;
+}
+.image-accontainer{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  width:80%;
+}
+.bluecontainer {
+  display: flex;
+  gap: 40px;
+  
+}
+.blueimg {
+  background: teal;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  width:50%;
+  height: 20px;
+  
 }
