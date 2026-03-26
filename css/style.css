@@ -1,4 +1,4 @@
-body{
+.body{
 margin:0;
 font-family:Arial;
 background:#f5f5f5;
@@ -25,6 +25,7 @@ font-size:22px;
 
 .buy-btn{
 background:#1b1b20;
+}
 .price{
 font-size:24px;
 margin:10px 0;
@@ -74,6 +75,7 @@ margin:10px;
 .body{
 background:#f5f5f5;
 font-family:Arial;
+}
 .ac-section h2{
 font-size:26px;
 font-weight:700;
@@ -111,7 +113,7 @@ margin:10px 0;
 font-size:20px;
 font-weight:bold;
 }   
-body{
+.body{
 font-family: Arial;
 background:#988181;
 margin:0;
@@ -209,7 +211,7 @@ font-size:14px;
   color: #111;  
   margin: 0;
 }
-body {
+.body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f2f2f2;
@@ -217,7 +219,7 @@ body {
 
 
 .card-container {
-.arrow {
+
   font-size: 22px;
   cursor: pointer;
   color: #333;
@@ -269,6 +271,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   background: linear-gradient(to right, #4da3d9, #2c7fb8);
+}
 .bank {
   background: #8b1c1c;
   color: white;
@@ -299,7 +302,7 @@ body {
   font-weight: 600;
   color: #000;
 }
-body {
+.body {
   font-family: Arial, sans-serif;
   background: #f5f5f5;
 }
@@ -313,6 +316,7 @@ body {
 
 .product-slider {
   display: flex;
+}
 .products-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -352,8 +356,6 @@ body {
   cursor: pointer;
 }
 
-
-.card img {
 .product-card {
   background: #fff;
   border-radius: 12px;
@@ -373,8 +375,6 @@ body {
   object-fit: contain;
 }
 
-
-.title {
 .main-container4{
 display:flex;
 justify-content:space-between;
@@ -430,7 +430,7 @@ margin:10px;
   right: 0;
 }
 
-body {
+.bodyash {
     background-color: #eaeaea;   
 }
 
@@ -469,10 +469,10 @@ body {
     font-weight: 700px;
 }
 
-.ac-section{
+.containerac-section{
 margin-top:40px;
 }
-.ac-section h2{
+.ac-sectionash{
 font-size:26px;
 font-weight:700;
 }
@@ -480,13 +480,13 @@ font-weight:700;
 color:#555;
 margin-bottom:20px;
 }
-.products{
+.productsash{
 display:flex;
 gap:10px;
 flex-wrap:wrap;
 
 }
-.card{
+.cardac{
 background:#fff;
 border-radius:12px;
 padding:10px;
@@ -494,7 +494,7 @@ width:22%;
 box-shadow:0 2px 8px rgba(0,0,0,0.1);
 position:relative;
 }
-.badge{
+.badgeac{
 position:absolute;
 top:10px;
 left:10px;
@@ -504,7 +504,7 @@ padding:5px 10px;
 border-radius:5px;
 font-size:12px;
 }
-.card img{
+.card imgac{
 width:80%;
 height:150px;
 object-fit:absolute;
@@ -518,21 +518,21 @@ font-size:10px;
 margin:15px 0;
 color: #888;
 }
-.price{
+.priceac{
 font-size:18px;
 font-weight:bold;
 }
-.price span{
+.price1{
 color:green;
 font-size:14px;
 margin-left:5px;
 }
-.mrp{
+.mrpac{
 text-decoration:solid;
 color:#151515;
 font-size:20px;
 }
-.rating{
+.ratingac{
 color:orange;
 font-size:15px;
 
@@ -543,6 +543,7 @@ margin-top:40px;
 .tonac-section h2{
 font-size:26px;
 font-weight:700;
+}
 .toncard{
 background:#fff;
 border-radius:12px;
@@ -559,20 +560,22 @@ flex-wrap:wrap;
 .containertonac-section{
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: rgb(118, 166, 214);
+  background-color: rgb(255, 255, 255);
   padding: 10px;
+  gap:10px;
+
 }
 .image-accontainer{
 display: flex;
 size: 20px;
 }
-}
-.container {
+
+.containerac {
   display: flex;
   gap: 10px;
 }
 
-.box {
+.boxac {
   background: rgb(244, 244, 244);
   color: rgb(10, 10, 10);
   padding: 50px;
@@ -593,7 +596,7 @@ size: 20px;
   
 }
 .blueimg {
-  background: teal;
+  background: rgb(255, 255, 255);
   color: white;
   padding: 40px;
   text-align: center;
@@ -601,7 +604,7 @@ size: 20px;
   height: 20px;
   
 }
-.rating {
+.ratingac {
   margin-top: 8px;
   font-size: 14px;
   color: orange;
