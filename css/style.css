@@ -1,6 +1,12 @@
 body{
 font-family:Arial;}
 .oppo{
+.body{
+margin:0;
+font-family:Arial;
+background:#f5f5f5;
+}
+.main-container{
 display:flex;
 justify-content:space-between;
 align-items:center;
@@ -38,6 +44,14 @@ max-height:280px;
 display:flex;
 justify-content:space-between;
 align-items:center;}
+align-items:center;
+padding:35px;
+margin:10px;
+}
+.body{
+background:#f5f5f5;
+font-family:Arial;
+}
 .ac-section h2{
 font-size:26px;
 font-weight:700;}
@@ -76,6 +90,13 @@ font-weight:bold;
 body{
 padding:40px;}
 
+.body{
+font-family: Arial;
+background:#988181;
+margin:0;
+padding:40px;
+color:#000000;
+}
 .price1 span{
 font-size:14px;
 margin-left:5px;
@@ -159,6 +180,17 @@ body {
   margin: 0;}
 
 .arrow {
+  margin: 0;
+}
+.body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+}
+
+
+.card-container {
+
   font-size: 22px;
   cursor: pointer;
   color: #333;}
@@ -213,6 +245,23 @@ body {
   font-weight: 600;
   color: #000;}
 
+  color: #000;
+}
+.body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+
+.slider-container {
+  position: relative;
+  padding: 20px;
+}
+
+
+.product-slider {
+  display: flex;
+}
 .products-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -228,6 +277,18 @@ body {
   padding: 5px 10px;
   font-size: 12px;
   border-radius: 6px;}
+  border-radius: 6px;
+}
+
+
+.wishlist {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #aaa;
+  font-size: 18px;
+  cursor: pointer;
+}
 
 .product-card {
   background: #fff;
@@ -248,11 +309,13 @@ padding:35px;
 margin:10px;}
 
 body {
-    background-color: #eaeaea;   
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
 }
+ 
 
 .containerash {
-    width: 90%;
+    width: 80%;
     margin: 50px auto;
     padding: 20px;
     border: 2px solid rgb(255, 255, 255);
@@ -285,11 +348,18 @@ body {
     font-style: normal;
     font-weight: 700px;
 }
-
-.ac-section{
+.containerac1-section{
 margin-top:40px;
 }
-.ac-section h2{
+.productsac1{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+}
+.containerac-section{
+margin-top:40px;
+}
+.ac-sectionash{
 font-size:26px;
 font-weight:700;
 }
@@ -297,13 +367,13 @@ font-weight:700;
 color:#555;
 margin-bottom:20px;
 }
-.products{
+.productsash{
 display:flex;
 gap:10px;
 flex-wrap:wrap;
 
 }
-.card{
+.cardac{
 background:#fff;
 border-radius:12px;
 padding:10px;
@@ -311,7 +381,7 @@ width:22%;
 box-shadow:0 2px 8px rgba(0,0,0,0.1);
 position:relative;
 }
-.badge{
+.badgeac{
 position:absolute;
 top:10px;
 left:10px;
@@ -321,12 +391,12 @@ padding:5px 10px;
 border-radius:5px;
 font-size:12px;
 }
-.card img{
+.card img ac{
 width:80%;
 height:150px;
 object-fit:absolute;
 margin-top:30px;
-background-color: #e5e3e3;
+background-color: #f1eded;
 border-radius:10px;
 
 }
@@ -335,21 +405,21 @@ font-size:10px;
 margin:15px 0;
 color: #888;
 }
-.price{
+.priceac{
 font-size:18px;
 font-weight:bold;
 }
-.price span{
+.price1{
 color:green;
 font-size:14px;
 margin-left:5px;
 }
-.mrp{
+.mrpac{
 text-decoration:solid;
 color:#151515;
 font-size:20px;
 }
-.rating{
+.ratingac{
 color:orange;
 font-size:15px;
 
@@ -360,6 +430,7 @@ margin-top:40px;
 .tonac-section h2{
 font-size:26px;
 font-weight:700;
+}
 .toncard{
 background:#fff;
 border-radius:12px;
@@ -376,20 +447,22 @@ flex-wrap:wrap;
 .containertonac-section{
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: rgb(118, 166, 214);
+  background-color: rgb(255, 255, 255);
   padding: 10px;
+  gap:10px;
+
 }
 .image-accontainer{
 display: flex;
 size: 20px;
 }
-}
-.container {
+
+.containerac {
   display: flex;
   gap: 10px;
 }
 
-.box {
+.boxac {
   background: rgb(244, 244, 244);
   color: rgb(10, 10, 10);
   padding: 50px;
@@ -410,7 +483,7 @@ size: 20px;
   
 }
 .blueimg {
-  background: teal;
+  background: rgb(255, 255, 255);
   color: white;
   padding: 40px;
   text-align: center;
@@ -418,8 +491,35 @@ size: 20px;
   height: 20px;
   
 }
-.rating {
+.ratingac {
   margin-top: 8px;
   font-size: 14px;
   color: orange;
+}
+.featurecontainer .product {
+  display: flex;
+  gap: 10px;
+}
+
+.featurecontainer {
+  background: rgb(181, 44, 44);
+  color: rgb(10, 10, 10);
+  padding: 50px;
+  text-align: center;
+   height: 100px;
+   width:80%;
+}
+.featurecontainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 3 horizontal boxes */
+  gap: 10px;
+}
+
+.featurebox {
+  background-color: teal;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 8px;
 }
