@@ -31,16 +31,22 @@ margin:20px 0;
 font-size: 15px;
 }
 button{
-background:#5d60c2;
+background:#5a5c8f;
 color:white;
 border:none;
 padding:10px 25px;
 border-radius:5px;
 }
 .logo{
-padding:5px 10px;}
+padding:5px 10px;
+color:white;
+border-radius:5px;
+font-size:12px;
+margin-right:8px;
+}
 .red{
-background:#cc2626;}
+background:#d32f2f;
+}
 .blue{
 background:#1e88e5;
 }
@@ -194,9 +200,7 @@ margin-top: -10px;
   background: #f5f5f5;
   padding: 10px 15px;
   border-bottom: 1px solid #ddd;
-  font-family: Arial, sans-serif;
 }
-
 .offer-content {
   display: flex;
   align-items: center;
@@ -204,7 +208,6 @@ margin-top: -10px;
   flex: 1;
   justify-content: center;
 }
-
 .bank {
   background: #8b1c1c;
   color: white;
@@ -237,11 +240,13 @@ margin-top: -10px;
 }
 
 body {
-    background-color: #eaeaea;   
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
 }
+ 
 
 .containerash {
-    width: 90%;
+    width: 80%;
     margin: 50px auto;
     padding: 20px;
     border: 2px solid rgb(255, 255, 255);
@@ -274,11 +279,18 @@ body {
     font-style: normal;
     font-weight: 700px;
 }
-
-.ac-section{
+.containerac1-section{
 margin-top:40px;
 }
-.ac-section h2{
+.productsac1{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+}
+.containerac-section{
+margin-top:40px;
+}
+.ac-sectionash{
 font-size:26px;
 font-weight:700;
 }
@@ -286,13 +298,13 @@ font-weight:700;
 color:#555;
 margin-bottom:20px;
 }
-.products{
+.productsash{
 display:flex;
 gap:10px;
 flex-wrap:wrap;
 
 }
-.card{
+.cardac{
 background:#fff;
 border-radius:12px;
 padding:10px;
@@ -300,7 +312,7 @@ width:22%;
 box-shadow:0 2px 8px rgba(0,0,0,0.1);
 position:relative;
 }
-.badge{
+.badgeac{
 position:absolute;
 top:10px;
 left:10px;
@@ -310,12 +322,12 @@ padding:5px 10px;
 border-radius:5px;
 font-size:12px;
 }
-.card img{
+.card img ac{
 width:80%;
 height:150px;
 object-fit:absolute;
 margin-top:30px;
-background-color: #e5e3e3;
+background-color: #f1eded;
 border-radius:10px;
 
 }
@@ -324,21 +336,21 @@ font-size:10px;
 margin:15px 0;
 color: #888;
 }
-.price{
+.priceac{
 font-size:18px;
 font-weight:bold;
 }
-.price span{
+.price1{
 color:green;
 font-size:14px;
 margin-left:5px;
 }
-.mrp{
+.mrpac{
 text-decoration:solid;
 color:#151515;
 font-size:20px;
 }
-.rating{
+.ratingac{
 color:orange;
 font-size:15px;
 
@@ -349,6 +361,7 @@ margin-top:40px;
 .tonac-section h2{
 font-size:26px;
 font-weight:700;
+}
 .toncard{
 background:#fff;
 border-radius:12px;
@@ -365,20 +378,22 @@ flex-wrap:wrap;
 .containertonac-section{
   display: grid;
   grid-template-columns: auto auto auto;
-  background-color: rgb(118, 166, 214);
+  background-color: rgb(255, 255, 255);
   padding: 10px;
+  gap:10px;
+
 }
 .image-accontainer{
 display: flex;
 size: 20px;
 }
-}
-.container {
+
+.containerac {
   display: flex;
   gap: 10px;
 }
 
-.box {
+.boxac {
   background: rgb(244, 244, 244);
   color: rgb(10, 10, 10);
   padding: 50px;
@@ -399,7 +414,7 @@ size: 20px;
   
 }
 .blueimg {
-  background: teal;
+  background: rgb(255, 255, 255);
   color: white;
   padding: 40px;
   text-align: center;
@@ -407,8 +422,35 @@ size: 20px;
   height: 20px;
   
 }
-.rating {
+.ratingac {
   margin-top: 8px;
   font-size: 14px;
   color: orange;
+}
+.featurecontainer .product {
+  display: flex;
+  gap: 10px;
+}
+
+.featurecontainer {
+  background: rgb(181, 44, 44);
+  color: rgb(10, 10, 10);
+  padding: 50px;
+  text-align: center;
+   height: 100px;
+   width:80%;
+}
+.featurecontainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 3 horizontal boxes */
+  gap: 10px;
+}
+
+.featurebox {
+  background-color: teal;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 8px;
 }
