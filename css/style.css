@@ -77,6 +77,12 @@ letter-spacing: -.06px;
 margin: 23px 19px;
 line-height: 0%;
 }
+
+.sub-text1{
+color:#3a2f2f;
+margin: bottom 20px;
+}
+
 .products-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
