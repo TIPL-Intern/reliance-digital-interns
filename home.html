@@ -1,107 +1,85 @@
 <!DOCTYPE html>
-<html>
-<head>
-
+<html lang="en">
+<head>  
+ 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   
 <title>Reliance Digital Clone</title>
-<link rel="stylesheet" href="css/style.css"
->
+
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
-<div class="oppo">
+<!-- Header -->
+<header class="bg-primary text-white p-3">
+<div class="container d-flex justify-content-between">
+
+<h3>Reliance Digital</h3>
+
+<input type="text" placeholder="Search Products" class="form-control w-50">
+
+<div>
+<a href="pages/cart.html" class="text-white me-3">Cart</a>
+<a href="pages/contact.html" class="text-white">Contact</a>
+</div>
+
+</div>
+</header>
 
 
-    <div class="left-box">
+<!-- home Container -->
 
-        <h1>OPPO K14x <span>5G</span></h1>
+<section class="container mt-4 home">
 
-        <p class="priceac">Starting from ₹13,499*</p>
+<div class="row align-items-center">
 
-        <button onclick="buyNow()">Buy Now</button>
+<div class="col-md-6">
 
-        <p class="offer">Flat ₹1500 Instant Discount*</p>
+<h1>OPPO K14x 5G</h1>
 
-        <div class="logos">
-            <span class="logo red">IDFC FIRST Bank</span>
-            <span class="logo blue">SBI Card</span>
-        </div>
+<h3>Starting from ₹13,999*</h3>
+
+<p>Price Inclusive of Bank Offer</p>
+
+<button class="btn btn-primary">Buy Now</button>
+
+</div>
+
+<div class="col-md-6 img-center">
+    <div class="row align-items-left">
 
     </div>
 
-    <div class="right-box">
-        <img src="image/banner/oppoo1.png">
-    </div>
+    <img src="image/banner/oppo.jpg" class="img-fluid">
 
 </div>
 
-<div class= "homepage">
-<section class="deals">
-
-<h2>Upgrade to Summer Comfort | ACs Starting from Rs. 24990*</h2>
-
-<div class= "products-container">
-
-  <div class="product-card">
-    <span class="badge1">₹2000 Off At Checkout</span>
-   <img src="image/banner/HAC.png">
-<h4>Voltas 1.5 Ton 3 Star 4-in-1 Convertible Inverter Split AC, 183V Vectra Magnum</h4>
-    <p class="price1">₹36,990.00 <span>38% OFF</span></p>
-    <p class="mrp1">MRP ₹59,790.00</p>
-    
-<p class="rating">⭐⭐⭐⭐☆ (15)</p>
-  </div>
-
-<div class="product-card">
-<span class="badge1">₹5000 Off At Checkout</span>
-<img src="image/banner/HAC2.png">
-
-<h4>LG 1.5 Ton 5 Star Split AC, US-Q19CNZE (Dual Inverter Compressor)</h4>
-
-<p class="price1">₹44,990.00 <span>13% OFF</span></p>
-<p class="mrp1">MRP ₹51,600.00</p>
-
-<p class="rating">⭐⭐⭐⭐☆ (15)</p>
-
-</div>
-
-<div class="product-card">
-<span class="badge1">₹4500 Off At Checkout</span>
-<img src="image/banner/HAC3.png"> 
-
-<h4>Carrier 1.5 T 3 Star Xcel Edge Fxi Inverter Split AC, CAI18CE3R35F0X-Led</h4>
-<p class="price1">₹46,490.00<span> 14% OFF</span></p>
-<p class="mrp1">MRP ₹53,900.00</p>
-<p class="rating">⭐⭐⭐⭐☆ (15)</p>
-</div>
-
-<div class="product-card">
-<span class="badge1">₹3000 Off At Checkout</span>
-<img src="image/banner/HAC4.png">
-<h4>Godrej 1.5 Ton 3 Star 5-in-1 Convertible Inverter Split AC, 18TTC3-W </h4>
-<p class="price1">₹32,690.00 <span>23% OFF</span></p>
-<p class="mrp1">MRP ₹42,300</p>
-
-<p class="rating">⭐⭐⭐⭐☆ (44)</p>
-
-</div>
-<div class="product-card">
-<span class="badge1">₹5000 Off </span>
-<img src="image/banner/HAC5.png">
-<h4>Samsung 1.5 Ton 5 Star Bespoke AI WindFree Inverter Smart Split AC</h4>
-<p class="price1">₹53,490.00 <span>2% OFF</span></p>
-<p class="mrp1">MRP ₹54,490.00 </p>
-
-<p class="rating">⭐⭐⭐⭐☆ (44)</p>
-
-</div>
+</div> 
 
 </div>
 
 </section>
-</div>
 
-<div class="specialdeals">
+
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>        
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Special Deals</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
 
 <section class="deals">
 <h2>Special Deals</h2>
@@ -135,381 +113,9 @@
 <img src="image/banner/tv.png" alt="TV">
 <p>4K Ultra HD</p>
 </div>
-</div>
+
 </div>
 </section>
-<div class="offer-banner">
-  
-  <span class="arrow">&#10094;</span>
 
-  <div class="offer-content">
-    <span class="bank">IDFC FIRST Bank</span>
-    <span class="divider"></span>
-    <span class="text">
-      UP TO <span class="highlight">₹10000</span> INSTANT DISCOUNT* </span>
-    <span class="divider"></span>
-    <span class="emi">CREDIT CARD EMI</span>
-  </div>
-
-
-</div>
-
-<div class="homepage">
-<section class="deals">
-  <h2>Deals on Latest Tablets</h2>
-<p class="sub-text">Upto 9 Months No Cost EMI on HDFC/ICICI/SBI*</p>
-    
-<div class="products-container">
-
-  <div class="product-card">
-    <img src="image/banner/ipad.png" alt="product">
-   <h4> Apple iPad A16 11th Gen 2025 27.59 cm (11 inch) Wi-Fi Tablet</h4>
-    <p class="price1">₹33,900.00 <span class="discount">3% OFF</span></p>
-    <p class="mrp1">MRP ₹34,900.00</p>
-    <div class="rating">⭐⭐⭐⭐☆ <span>(105)</span></div>
-  </div>
-
-  <div class="product-card">
-    <img src="image/banner/lenovo.png" alt="product">
-    <h4>Redmi Pad Wi-Fi + LTE Tablet, 8 GB RAM, 256 GB, Graphite Grey</h4>
-    <p class="price1">₹19,999.00 <span>9% OFF</span></p>
-    <p class="mrp1">MRP ₹21,999.00 </p>
-    <div class="rating">⭐⭐⭐⭐☆ <span>(80)</span></div>
-  </div>
-
-  <div class="product-card">
-    <img src="image/banner/samsung.png" alt="product">
-    <h4> Samsung Galaxy Tab S10 Lite 27.70 cm (10.9 Inch)</h4>
-    <p class="price1">₹36,499.00 <span>1% OFF</span></p>
-    <p class="mrp1">MRP ₹36,999.00</p>
-    <div class="rating">⭐⭐⭐⭐☆ <span>(60)</span></div>
-  </div>
-
-  <div class="product-card">
-    <img src="image/banner/oneplus.png" alt="product">
-    <h4>OnePlus Pad Lite 27.94 cm (11 inch) Wi-Fi Tablet </h4>
-    <p class="price1">₹17,999.00 <span>10% OFF</span></p>
-    <p class="mrp1">MRP ₹19,999.00</p>
-    <div class="rating">⭐⭐⭐⭐☆ <span>(95)</span></div>
-  </div>
-
-   <div class="product-card">
-    <img src="image/banner/tab.png" alt="product">
-    <h4>OnePlus Pad Lite 27.94 cm (11 inch) Wi-Fi Tablet </h4>
-    <p class="price1">₹17,999.00 <span> 10% OFF</span></p>
-    <p class="mrp1">MRP ₹19,999.00</p>
-    <div class="rating">⭐⭐⭐⭐☆ <span>(95)</span></div>
-  </div>
-
-</div>
-</div>
-</section>
-</div>
-
-<div class="homepage">
-<section class="deals">
-
-   <h2>Best of OnePlus Smartphones</h2>
-   <p class="sub-text">Rs.3000 Instant Disc & 6Months NCEMI HDFC CC*</p>
-
-   <div class="products-container">
-
-      <div class="product-card">
-    <span class="badge1">₹1.5K Disc + 6M NCEMI HDFC CC*</span>
-   <img src="image/banner/oneplusnord5.png">
-<h4>OnePlus Nord 5 5G 256 GB, 8 GB RAM, Dry Ice, Mobile Phone</h4>
-    <p class="price1">₹33,999.00 <span> 3% OFF</span></p>
-    <p class="mrp1">MRP ₹34,999.00 </p>
-<p class="rating">⭐⭐⭐⭐☆ (40)</p>
-      </div>
-
-      <div class="product-card">
-    <span class="badge1">₹2K Disc + 6M NCEMI HDFC CC*</span>
-   <img src="image/banner/neversettle.png">
-<h4>OnePlus 15 5G 512 GB, 16 GB RAM, Sand Storm, Mobile Phone</h4>
-    <p class="price1">₹47,999.00 <span> 13% OFF</span></p>
-    <p class="mrp1">MRP ₹54,999.00</p>
-<p class="rating">⭐⭐⭐⭐⭐ (500)</p>
-      </div>
-
-      <div class="product-card">
-    <span class="badge1">₹3K Disc + 6M NCEMI HDFC CC*</span>
-   <img src="image/banner/1+ns.png">
-<h4>OnePlus 15 5G 512 GB, 16 GB RAM, Sand Storm, Mobile Phone</h4>
-    <p class="price1">₹79,999.00<span> 18% OFF</span></p>
-    <p class="mrp1">MRP ₹96,999.00 </p>
-<p class="rating">⭐⭐⭐⭐⭐ (100)</p>
-      </div>
-
-      <div class="product-card">
-    <span class="badge1">₹3K Disc + 6M NCEMI HDFC CC*</span>
-   <img src="image/banner/blackNS.png">
-<h4>OnePlus 13s 5G 256 GB, 12 GB RAM, Black Velvet, Mobile Phone</h4>
-    <p class="price1">₹50,999.00 <span> 12% OFF</span></p>
-    <p class="mrp1">MRP ₹59,999.00 </p>
-<p class="rating">⭐⭐⭐⭐☆ (150)</p>
-   </div>
-
-    <div class="product-card">
-    <span class="badge1">₹2K Disc + 6M NCEMI HDFC CC*</span>
-   <img src="image/banner/1+blk.png">
-<h4>OnePlus 15R 5G 512 GB, 12 GB RAM, Charcoal Black,Phone</h4>
-    <p class="price1">₹52,997.00 <span> 12% OFF</span></p>
-    <p class="mrp1">MRP ₹59,999.00 </p>
-<p class="rating">⭐⭐⭐⭐☆ (200)</p>
-   </div>
-
-</section>
-</div>
-
-<div class="homepage">
-<section class="deals">
-
-   <h2>Best Selling Personal Care Range</h2>
-   <p class="sub-text">Get 5% off on UPI payments or 6 months No cost EMI</p>
-    <div class="products-container">
-
-       <div class="product-card">
-    <span class="badge1">5% off on UPI Payment</span>
-   <img src="image/banner/hair.png">
-<h4>Agaro HV2179 Volumizer Hair Dryer, Rose Gold & Black</h4>
-    <p class="price1">₹1,899.00 <span> 53% OFF</span></p>
-    <p class="mrp1">MRP ₹3,999.00</p>
-   </div>
-
-    <div class="product-card">
-    <span class="badge1">Upto 7.5% Bank Discount*</span>
-   <img src="image/banner/airwrap.png">
-<h4>Dyson Airwrap Id Multi-Styler and Dryer, Vinca Blue & Topaz</h4>
-    <p class="price1">₹44,999.00 <span> 10% OFF</span></p>
-    <p class="mrp1">MRP ₹49,900.00 </p>
-   </div>
-
-   <div class="product-card">
-    <span class="badge1">5% off on UPI Payment</span>
-   <img src="image/banner/blade.png">
-<h4>Philips One Blade Fancy Box, QP1624/10</h4>
-    <p class="price1">₹1,749.00 <span> 24% OFF</span></p>
-    <p class="mrp1">MRP ₹2,299.00</p>
-   </div>
-
-    <div class="product-card">
-    <span class="badge1">5% off on UPI Paymen</span>
-   <img src="image/banner/dry.png">
-<h4>Agaro HD1120 2000 W Hair Dryer,Black</h4>
-    <p class="price1">₹1,399.00<span> 46% OFF</span></p>
-    <p class="mrp1">MRP ₹2,595.00</p>
-   </div>
-
-      <div class="product-card">
-    <span class="badge1">5% off on UPI Paymen</span>
-   <img src="image/banner/brush.png">
-<h4>Havells Hair Straightening Brush HS4211</h4>
-    <p class="price1">₹2,349.00<span> 45% OFF</span></p>
-    <p class="mrp1">MRP ₹4,295.00   </p>
-   </div>
-
-</section>
-</div>
-
-<div class="homepage">
-<section class="deals">
-
-   <h2>Windows Laptops | 5% Instant Bank Discount</h2>
-   <p class="sub-text">Upto 6 Months No Cost EMI on HDFC/ICICI/SBI*</p>
-    <div class="products-container">
-
-       <div class="product-card">
-    <span class="badge1">7.5% Instant Disc on Credit Cards*</span>
-   <img src="image/banner/victus.png">
-   <h4>HP Victus 15-FA2192TX Gaming Laptop 39.62 cm - 15.6 inch, Performance Blue</h4>
-    <p class="price1">₹74,999.00<span> 10% OFF</span></p>
-    <p class="mrp1">MRP ₹83,499.00</p>
-       </div>
-
-        <div class="product-card">
-    <span class="badge1">7.5% Instant Disc on Credit Cards*</span>
-   <img src="image/banner/dell.png">
-   <h4>Dell Insprion 3530 Notebook Laptop, 39.62 cm - 15.6 inch, Carbon Black</h4>
-    <p class="price1">₹44,990.00<span> 33% OFF</span></p>
-    <p class="mrp1">MRP ₹66,999.00</p>
-       </div>
-
-        <div class="product-card">
-    <span class="badge1">7.5% OFF OR 6 Month No Cost EMI*</span>
-   <img src="image/banner/asus.png">
-   <h4>Asus VivoBook Go15 Standard Laptop,39.62 cm - 15.6 inch, Cool Silver</h4>
-    <p class="price1">₹37,999.00<span> 24% OFF</span></p>
-    <p class="mrp1">MRP ₹49,999.00</p>
-       </div>
-
-        <div class="product-card">
-    <span class="badge1">7.5% Instant Disc on Credit Cards*</span>
-   <img src="image/banner/lenovolap.png">
-   <h4>Lenovo IdeaPad Slim 3 15AMN8 Standard Laptop,39.62 cm - 15.6 inch, Arctic Grey</h4>
-    <p class="price1">₹51,999.00<span> 21% OFF</span></p>
-    <p class="mrp1">MRP ₹65,499.00</p>
-       </div>
-
-        <div class="product-card">
-    <span class="badge1">7.5% OFF OR 6 Month No Cost EMI*</span>
-   <img src="image/banner/galaxy.png">
-   <h4>Samsung Galaxy Book4 360 Notebook Laptop,39.62 cm - 15.6 inch, Gray</h4>
-    <p class="price1">₹94,985.00<span> 33% OFF</span></p>
-    <p class="mrp1">MRP ₹1,41,439.00</p>
-       </div>
-
-      </section>
-  </div>
-
-  <div class="homepage">
-<section class="deals">
-
-   <h2>Fresh Food, Zero Compromise</h2>
-   <p class="sub-text">Upto Rs. 5000 Instant Discount HDFC, SBI, Axis</p>
-
-   <div class="products-container">
-
-      <div class="product-card">
-   <img src="image/banner/LGL2.png">
-<h4>LG 242 L 2 Star Inverter Frost Free Double Door Refrigerator(DAZZLE STEEL)</h4>
-    <p class="price1">₹25,990.00 <span> 22% OFF</span></p>
-    <p class="mrp1">MRP ₹33,499.00</p>
-      </div>
-
-      <div class="product-card">
-   <img src="image/banner/LG5.png">
-<h4>LG 224 litres 5 Star Single Door Refrigerator, Scarlet Charm GL D241ASCU</h4>
-    <p class="price1">₹23,140.00<span> 24% OFF</span></p>
-    <p class="mrp1">MRP ₹29,399.00</p>
-      </div>
-
-      <div class="product-card">
-   <img src="image/banner/samsung3.png">
-<h4>Samsung 183 litres 3 Star Single Door Refrigerator, Camellia Blue RR20C1823CU</h4>
-    <p class="price1">₹21,999.00</p>
-      </div>
-
-      <div class="product-card">
-   <img src="image/banner/saml2.png">
-<h4>Samsung 256 L 2 Star Frost Free Double Door Refrigerator, Elegant Inox, RT30C3732S8</h4>
-    <p class="price1">₹28,690.00<span> 24% OFF</span></p>
-    <p class="mrp1">MRP ₹41,990.00</p>
-   </div>
-
-       <div class="product-card">
-   <img src="image/banner/smng.png">
-<h4>Samsung 183 litres 3 Star Single Door Refrigerator, Elegant Inox RR20C1/2Y23S8</h4>
-    <p class="price1">₹16,090.00<span> 20% OFF</span></p>
-    <p class="mrp1">MRP ₹19,999.00 </p>
-   </div>
-
-</section>
-</div>
-
-<div class="homepage">
-<section class="deals">
-
-   <h2>Air Fryers Starting from Rs. 2799</h2>
-   <p class="sub-text">Party Snacks, Made Healthy</p>
-
-   <div class="products-container">
-
-      <div class="product-card">
-        <span class="badge1">5% off on UPI Payment,SBI CC</span>
-   <img src="image/banner/digi.png">
-<h4>Kent 4 L Digi Plus Air Fryer 1300 W, Black</h4>
-    <p class="price1">₹3,049.00<span> 70% OFF</span></p>
-    <p class="mrp1">MRP ₹10,000.00</p>
-      </div>
-
-      <div class="product-card">
-        <span class="badge1">5% off on ICICI, HDFC, SBI CC</span>
-   <img src="image/banner/philipsair.png">
-<h4>Pigeon Healthifry 1400 W 4.2 L Digital Air Fryer</h4>
-    <p class="price1">₹2,799.00<span> 53% OFF</span></p>
-    <p class="mrp1">MRP  ₹5,995.00 </p>
-      </div>
-
-      <div class="product-card">
-        <span class="badge1">5% off on ICICI, HDFC, SBI CC</span>
-   <img src="image/banner/havells.png">
-<h4>Havells Pro Life Neo 4.5 L Airfryer</h4>
-<p class="price1">₹5,399.00<span> 46% OFF</span></p>
-    <p class="mrp1">MRP ₹9,995.00</p>
-      </div>
-
-      <div class="product-card">
-        <span class="badge1">5% off on ICICI, SBI, HDFC CC</span>
-   <img src="image/banner/onechef.png">
-<h4>Philips OneChef 6L Smart All in One Cooking Device </h4>
-    <p class="price1">₹19,995.00</p>
-   </div>
-
-    <div class="product-card">
-        <span class="badge1">5% off on UPI Paymen,SBI CC</span>
-   <img src="image/banner/fryer.png">
-<h4>Havells Prolife Vista 4.2 L Air Fryer 1350 W</h4>
-    <p class="price1">₹4,525.00<span> 40% OFF</span>
-     <p class="mrp1">MRP ₹7,495.00 </p>
-   </div>
-
-</section>
-</div>
-
-<div class= "homepage">
-<section class="deals">
-
-<h2>Powerful Wash. Gentle Care.</h2>
-<p class="sub-text">7.5% Off BOB Credit Card</p>
-
-   <div class="products-container">
-
-  <div class="product-card">
-    <span class="badge1">7.5% Off Multi Bank CC EMI*</span>
-   <img src="image/banner/wm1.png">
-<h4>Voltas Beko 6.5 kg Top Load, 700 RPM, Double Water Fall, 4 Wash Program, Wing Pulsator, Lint Filter, Grey, 5 Star</h4>
-    <p class="price1">₹12,490.00<span> 48% OFF</span></p>
-    <p class="mrp1">MRP ₹23,990.00</p>
-<p class="rating">⭐⭐⭐⭐☆ (4)</p>
-  </div>
-
-<div class="product-card">
-<span class="badge1">7.5% Off Multi Bank CC EMI*</span>
-<img src="image/banner/wm2.png">
-<h4>LG 8 kg Semi automatic, Roller Jet Pulsator, Wind jet Dry, 3+1 Washprograms, Rat Away feature, Burguandy, 5 star</h4>
-<p class="price1">13,990.00 <span> 13% OFF</span></p>
-<p class="mrp1">MRP ₹19,990.00</p>
-<p class="rating">⭐⭐⭐⭐⭐(5)</p>
-</div>
-
-<div class="product-card">
-<span class="badge1">7.5% Off Multi Bank CC EMI*</span>
-<img src="image/banner/wm3.png"> 
-<h4>Whirlpool 7 kg Top Load, 6th Sense technology, ZPF Technology, 8 Wash Program, Grey, 5 Star (WhiteMagic Elite)</h4>
-<p class="price1">₹16,990.00<span> 19% OFF</span></p>
-<p class="mrp1">MRP ₹20,900.00</p>
-</div>
-
-<div class="product-card">
-<span class="badge1">7.5% Off Multi Bank CC EMI*</span>
-<img src="image/banner/wm4.png">
-<h4>Samsung 8 kg Top Load, EcoBubble Technology, Digital Inverter Motor, AI Wash, Versailles Gray, 5 Star </h4>
-<p class="price1">₹21,990.00<span> 14% OFF</span></p>
-<p class="mrp1">MRP ₹25,500.00</p>
-<p class="rating">⭐⭐⭐⭐☆ (4.4)</p>
-</div>
-
-<div class="product-card">
-  <span class="badge1">7.5% Off Multi Bank CC EMI*</span>
-<img src="image/banner/wm5.png">
-<h4>Voltas Beko 7.5 kg Semi Automatic, 1350 RPM, Wings Pulsator, Fast Dry, Lint Filter, Burgundy, 5 Star </h4>
-<p class="price1">₹9,390.00<span> 35% OFF</span></p>
-<p class="mrp1">MRP ₹14,490.00 </p>
-<p class="rating">⭐⭐⭐☆ (3.6)</p>
-</div>
-
-</section>
-</div>
 </body>
 </html>
