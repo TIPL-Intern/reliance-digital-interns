@@ -20,13 +20,8 @@
 
         <button onclick="buyNow()">Buy Now</button>
 
-        <p class="offer">Flat ₹1500 Instant Discount*</p>
-
-        <div class="logos">
-            <span class="logo red">IDFC FIRST Bank</span>
-            <span class="logo blue">SBI Card</span>
-        </div>
-
+        <p class="offer">Flat ₹1500 Instant Discount*
+          <span><img src="image/banner/bank.png" alt="offer"></span></p>
     </div>
 
     <div class="right-box">
@@ -150,6 +145,7 @@
     <span class="divider"></span>
     <span class="emi">CREDIT CARD EMI</span>
   </div>
+ <span class="arrow">&#10095;</span>
 
 
 </div>
@@ -166,7 +162,7 @@
    <h4> Apple iPad A16 11th Gen 2025 27.59 cm (11 inch) Wi-Fi Tablet</h4>
     <p class="price1">₹33,900.00 <span class="discount">3% OFF</span></p>
      <p class="mrp1">MRP<span class="mrp1"> ₹34,900.00</span></p>
-    <div class="rating">⭐⭐⭐⭐☆ <span>(105)</span></div>
+    <div class="rating">⭐⭐⭐⭐☆ (105)</div>
   </div>
 
   <div class="product-card">
@@ -174,7 +170,7 @@
     <h4>Redmi Pad Wi-Fi + LTE Tablet, 8 GB RAM, 256 GB, Graphite Grey</h4>
     <p class="price1">₹19,999.00 <span>9% OFF</span></p>
      <p class="mrp1">MRP<span class="mrp1"> ₹21,999.00</span></p>
-    <div class="rating">⭐⭐⭐⭐☆ <span>(80)</span></div>
+    <div class="rating">⭐⭐⭐⭐☆ (80)</div>
   </div>
 
   <div class="product-card">
@@ -182,7 +178,7 @@
     <h4> Samsung Galaxy Tab S10 Lite 27.70 cm (10.9 Inch)</h4>
     <p class="price1">₹36,499.00 <span>1% OFF</span></p>
      <p class="mrp1">MRP<span class="mrp1"> ₹36,999.00</span></p>
-    <div class="rating">⭐⭐⭐⭐☆ <span>(60)</span></div>
+    <div class="rating">⭐⭐⭐⭐☆(60)</div>
   </div>
 
   <div class="product-card">
@@ -190,7 +186,7 @@
     <h4>OnePlus Pad Lite 27.94 cm (11 inch) Wi-Fi Tablet </h4>
     <p class="price1">₹17,999.00 <span>10% OFF</span></p>
      <p class="mrp1">MRP<span class="mrp1"> ₹19,999.00</span></p>
-    <div class="rating">⭐⭐⭐⭐☆ <span>(95)</span></div>
+    <div class="rating">⭐⭐⭐⭐☆ (95)</div>
   </div>
 
    <div class="product-card">
@@ -198,7 +194,7 @@
     <h4>OnePlus Pad Lite 27.94 cm (11 inch) Wi-Fi Tablet </h4>
     <p class="price1">₹17,999.00 <span> 10% OFF</span></p>
      <p class="mrp1">MRP<span class="mrp1"> ₹19,999.00</span></p>
-    <div class="rating">⭐⭐⭐⭐☆ <span>(95)</span></div>
+    <div class="rating">⭐⭐⭐⭐☆ (95)</div>
   </div>
 
 </div>
@@ -261,6 +257,29 @@
 
 </section>
 </div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="image/banner/homeslider1.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="image/banner/homeslider2.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="image/banner/homeslider3.png" style="width:100%">
+</div>
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
 
 <div class="homepage">
 <section class="deals">
@@ -283,7 +302,6 @@
 <h4>Dyson Airwrap Id Multi-Styler and Dryer, Vinca Blue & Topaz</h4>
     <p class="price1">₹44,999.00 <span> 10% OFF</span></p>
          <p class="mrp1">MRP<span class="mrp1"> ₹49,900.00</span></p>
-    <p class="mrp1">MRP ₹49,900.00 </p>
    </div>
 
    <div class="product-card">
@@ -512,6 +530,28 @@
 
 </section>
 </div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 15 seconds
+}
+</script>
 
 </body>
 </html>
