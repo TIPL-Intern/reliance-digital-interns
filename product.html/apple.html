@@ -107,20 +107,20 @@
    <div class="products-containerai">
 
   <div class="product-cardai1 ">
-
+<span class="badgeai1">7.5% Off Multi Bank CC EMI*</span>
    <img src="../image/banner/ai.png">
-<h4>Apple iPhone 16 128 GB, Teal</h4>
+<h4 class="image-titleai">Apple iPhone 16 128 GB, Teal</h4>
     <p class="priceai1">₹68,990.00</p>
-    <p class="mrpai1">MRP ₹69,900.00</p>
+    <p class="mrpai1">MRP <span class="mrpai1"> ₹69,900.00</span></p>
 <p class="ratingai">  ★★★★☆(181)</p>
   </div>
 
 <div class="product-cardai1">
 <span class="badgeai1">7.5% Off Multi Bank CC EMI*</span>
 <img src="../image/banner/ai1.png">
-<h4>Apple MC6T4HN/A MacBook Air (Apple M4 Chip/16 GB/256 GB SSD/MacOS Sequoia/Liquid Retina), 34.46 cm (13.6 inch), Sky Blu</h4>
-<p class="priceai1">91,900.00 </p>
-<p class="mrpai1">MRP ₹99,900.00</p>
+<h4 class="image-titleai">Apple MC6T4HN/A MacBook Air (Apple M4 Chip/16 GB/256 GB SSD/MacOS Sequoia/Liquid Retina), 34.46 cm (13.6 inch), Sky Blu</h4>
+<p class="priceai1">₹91,900.00 </p>
+<p class="mrpai1">MRP <span class="mrpai1"> ₹99,900.00</span></p>
 <p class="ratingai">  ★★★★☆(131)</p>
 </p>
 </div>
@@ -128,31 +128,32 @@
 <div class="product-cardai1">
 <span class="badgeai1">7.5% Off Multi Bank CC EMI*</span>
 <img src="../image/banner/ai2.png"> 
-<h4>Apple iPad A16 11th Gen 2025 27.59 cm (11 inch) Wi-Fi Tablet, 128 GB, Blue, MD4A4HN/A</h4>
+<h4 class="image-titleai">Apple iPad A16 11th Gen 2025 27.59 cm (11 inch) Wi-Fi Tablet, 128 GB, Blue, MD4A4HN/A</h4>
 <p class="priceai1">₹33,900.00<span>3% OFF</span></p>
-<p class="mrpai1">MRP ₹34,000.00</p>
+<p class="mrpai1">MRP <span class="mrpai1"> ₹34,000.00</span></p>
 <p class="ratingai">  ★★★★☆(181)</p>
 </div>
 
 <div class="product-cardai1">
+  <span class="badgeai1">7.5% Off Multi Bank CC EMI*</span>
 <img src="../image/banner/ai5.png">
-<h4>Apple Watch Series 10 GPS 46 mm Jet Black Aluminium Case with Black Sport Band - M/L</h4>
+<h4 class="image-titleai"> Apple Watch Series 10 GPS 46 mm Jet Black Aluminium Case with Black Sport Band - M/L</h4>
 <p class="priceai1">₹31,999.9<span>36% OFF</span></p>
-<p class="mrpai1">MRP ₹49,900.00</p>
+<p class="mrpai1">MRP <span class="mrpai1"> ₹49,900.00</span></p>
 </div>
 
 <div class="product-cardai1">
+  <span class="badgeai1">7.5% Off Multi Bank CC EMI*</span>
 <img src="../image/banner/ai3.png">
-<h4>Apple iPhone 16 128 GB, Ultramarine</h4>
+<h4 class="image-titleai">Apple iPhone 16 128 GB, Ultramarine</h4>
 <p class="priceai1">₹68,990,00<span>36% OFF</span></p>
-<p class="mrpai1">MRP ₹69,990.00</p>
+<p class="mrpai1">MRP <span class="mrpai1"> ₹69,900.00</span></p>
 <p class="ratingai">  ★★★★☆(181)</p>
 </div>
   </div>
 </div>
 
  
-
 
 
 <footer class="footeri">
@@ -244,12 +245,23 @@
   </div>
 
 
+
+<div class="dividerai"> </div>
   <div class="copyright">
     © 2023 Reliance Digital. All rights reserved.
   </div>
 </footer>
 
+<script>
+    const titles = document.querySelectorAll(".image-titleai");
 
+titles.forEach(title => {
+  const maxLength = 80; //
+  if (title.innerText.length > maxLength) {
+    title.innerText = title.innerText.substring(0, maxLength) + "...";
+  }
+});
+   </script>
 
 
 

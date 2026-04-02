@@ -1163,9 +1163,7 @@ color: #fff;
   font-size: 20px;
   font-weight: bold;
   color: #000000;
-}
-.priceai1 span {
-  color: #008000;
+  margin: 10px 0;
   font-size: 16px;
   margin-left: 5px;
 }
@@ -1173,14 +1171,20 @@ color: #fff;
 color:#A1A1A1;
 font-size:12px;
 font-weight: 500;
+margin:10px 0 ;
 line-height: 16px;
 letter-spacing: -.005em;
 text-align: left;
 }
+.mrpai1 span{
+  text-decoration: line-through;
+  color: #aaa;
+}
 .ratingai {
 color: rgb(247, 171, 32);
-font-size: 25px;
+font-size: 20px;
 margin-top: 5px;
+margin: 10px 0;
 } 
 
 
@@ -1222,7 +1226,7 @@ margin-top: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #eaeaea;
+  background: #f5f5f5;
   padding: 15px;
   margin-top: 20px;
   flex-wrap: wrap;
@@ -1281,14 +1285,22 @@ margin-top: 5px;
   color: #000000A6;
   font-weight: bold;
 }
-
+.dividerai {
+  height: 1px;
+  background-color:#9fb5cf;
+  margin: 10px 0;
+}
 .copyright {
   margin-top: 15px;
   font-size: 18px;
   color: #000000A6;
   font-weight: bold;
 }
-
+.image-titleai{
+color: #000000;
+font-size: 14px;
+ -webkit-line-clamp: 2;
+}
 
 
 
