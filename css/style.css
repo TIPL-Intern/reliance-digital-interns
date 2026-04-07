@@ -1303,8 +1303,6 @@ margin: 10px 0;
 .app-buttons img {
   height: 40px;
   margin-right: 10px;
-
- 
 }
 .foot-title{
   color: #141414;
@@ -1314,7 +1312,6 @@ margin: 10px 0;
 .social {
   text-align: center;
 }
-
 .icons span {
   display: inline-block;
   width: 35px;
@@ -1386,7 +1383,7 @@ margin-bottom: 30px;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   padding: 20px;
-} 
+}
 .mccard{
  background: #fff;
   border-radius: 12px;
@@ -1399,7 +1396,6 @@ margin-bottom: 30px;
   margin: 15px auto;  
   justify-content: center;
   justify-items: center;
-  
 }
 .mctitle{
   font-size: large;
@@ -1410,7 +1406,6 @@ margin-bottom: 30px;
   color: #000000;
   margin-left: 70px;
   gap: 20px;
-
 }
 .macbuy-btn {
   padding: 12px 25px;
@@ -1438,7 +1433,6 @@ margin-bottom: 30px;
   font-size: 14px;
   cursor: pointer;
 }
-
 .neo2-container {  
   display: flex;
   gap: 20px;
@@ -1446,7 +1440,6 @@ margin-bottom: 30px;
   background: #f1f3f6;
   font-family: Arial, sans-serif;
 }
-
 
 .neo2-filter {
   width: 260px;
@@ -1462,7 +1455,6 @@ margin-bottom: 30px;
   border-radius: 50%;
   font-size: 12px;
 }
-
 .neo2-chip {
   background: #dff3ec;
   padding: 6px 10px;
@@ -1470,17 +1462,14 @@ margin-bottom: 30px;
   display: inline-block;
   margin: 10px 0;
 }
-
 .neo2-section {
   margin-top: 20px;
 }
-
 .neo2-section.model-grid {
   display: grid;
   grid-template-columns: 1fr 1fr; 
   gap: 6px 10px;
 }
-
 .neo2-section.model-grid h4 {
   grid-column: span 2;
   margin-bottom: 8px;
@@ -1491,35 +1480,29 @@ margin-bottom: 30px;
   align-items: center;
   gap: 6px;
 }
-
 .neo2-inputs {
   display: flex;
   gap: 10px;
   margin: 10px 0;
 }
-
 .neo2-inputs input {
   width: 100%;
   padding: 5px;
 }
-
 .neo2-range-label {
   display: flex;
   justify-content: space-between;
   font-size: 12px;
   color: gray;
 }
-
 .neo2-products {
   flex: 1;
 }
-
 .neo2-header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
 }
-
 .neo2-sort {
   border: 1px solid #ccc;
   padding: 6px 15px;
@@ -1527,15 +1510,11 @@ margin-bottom: 30px;
   background: white;
   cursor: pointer;
 }
-
-
 .neo2-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
-
-
 .neo2-card {
   background: #fff;
   padding: 30px 15px 15px;
@@ -1549,8 +1528,6 @@ margin-bottom: 30px;
   height: 120px;
   object-fit: contain;
 }
-
-
 .neo2-badge {
   position: absolute;
   top: 5px;
@@ -1574,7 +1551,6 @@ margin-bottom: 30px;
   -webkit-line-clamp: 2;
 color: #000;
 }
-
 .neo2-mrp {
   text-decoration: line-through;
   color: gray;
@@ -1624,26 +1600,20 @@ color: #000;
   font-size: 14px;
   font-weight: bold;
 }
-/* Header */
 .filter-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
 }
-
-/* Icon rotate animation */
 .filter-header i {
   transition: 0.3s;
 }
-
-/* Content hidden by default */
 .filter-content {
   display: none;
   margin-top: 8px;
 }
 
-/* When active */
 .neo2-section.active .filter-content {
   display: block;
 }
