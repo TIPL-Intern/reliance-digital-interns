@@ -3,13 +3,14 @@
 <head>
 
 <title>Reliance Digital Clone</title>
-<link rel="stylesheet" href="css/style.css"
->
+<link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
 </head>
 
 <body>
    
- <header class="main-header">
+     <header class="main-header">
 
 <a href="http://127.0.0.1:5500/home.html">
   <div class="header-left">
@@ -141,7 +142,6 @@
 <h2>Upgrade to Summer Comfort | ACs Starting from Rs. 24990*</h2>
 
 <div class= "products-container">
-
   <div class="product-card">
     <span class="badge1">₹2000 Off At Checkout</span>
    <img src="image/banner/HAC.png">
@@ -199,6 +199,7 @@
 </div>
 
 </section>
+
 </div>
 
 <div class="specialdeals">
@@ -210,7 +211,7 @@
 
 <div class="deal-card">
 <h3>Air Cooler</h3>
-<span class="price">Starting From ₹4499</span>
+<span class="price">At ₹4499</span>
 <img src="image/banner/wm.png" alt="Air Cooler">
 <p>Extra Offers Inside</p>
 </div>
@@ -231,7 +232,7 @@
 
 <div class="deal-card">
 <h3>TCL 55" TV</h3>
-<span class="price">Starting From ₹29990</span>
+<span class="price">At ₹29990</span>
 <img src="image/banner/tv.png" alt="TV">
 <p>4K Ultra HD</p>
 </div>
@@ -362,6 +363,7 @@
 
 </section>
 </div>
+
 <div class="slideshow-container">
 
 <div class="mySlides fade">
@@ -753,6 +755,15 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 15 seconds
 }
 </script>
+<script>
+  const categoryBar = document.getElementById("categoryBar");
 
+  function scrollCategory(direction) {
+    categoryBar.scrollBy({
+      left: direction * 250,
+      behavior: "smooth"
+    });
+  }
+</script>
 </body>
 </html>
