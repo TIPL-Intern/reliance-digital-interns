@@ -109,15 +109,70 @@
     <p>Washing Machine</p>
     
   </div>
-  <button class="cat-btn right" onclick="scrollCategory(1)">❯</button>
+ 
   </div>
+
+</div>
+<div class="slider-box">
+
+  <div class="slider-item active-slide">
+    <div class="banner">
+      <div class="content">
+        <div class="logo-box">
+          <i class="fa-brands fa-apple"></i>
+          <span>iPhone 17</span>
+        </div>
+        <h1 class="gradient-textcr">Magichromatic.</h1>
+         <button class="buy-btncr">Buy Now</button>
+      </div>
+      <div class="image">
+        <img src="../image/banner/ip1.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="slider-item">
+    <div class="bannerneo">
+      
+      <div class="imageSR">
+        <img src="../image/banner/www9.png" style="width: 100%;">
+      </div>
+    </div>
+  </div>
+  <div class="slider-item">
+    <div class="bannerNEO">
+      
+      <div class="imageSR">
+        <img src="../image/banner/www7.png" style="width: 100%;">
+      </div>
+    </div>
+  </div>
+  <div class="slider-item">
+    <div class="bannerair">
+    
+      <div class="image">
+        <img src="../image/banner/www2.png" style="width: 100%;">
+      </div>
+    </div>
+  </div>
+
+  <div class="slider-item">
+    <div class="bannerpro">
+
+      
+      <div class="image">
+        <img src="../image/banner/www1.png" style="width:100%">
+      </div>
+    </div>
+  </div>
+
+
+  <button class="btn-prev">&#10094;</button>
+  <button class="btn-next">&#10095;</button>
+
 </div>
     <div class="banner">
-
-  
     <div class="content">
-     
-     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <div class="iPhone17-logo">
   <i class="fa-brands fa-apple"></i>
@@ -131,7 +186,57 @@
         <img src="../image/banner/ip1.png"> 
     </div>
 </div>
-  
+  <div class="bannerneo">
+    
+    <div class="contentneo">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<div class="iPhone17-logo">
+  <i class="fa-brands fa-apple"></i>
+  <span>MacBook Neo</span>
+</div>
+        <h1 class="gradient-textneo">Hello,Neo.</h1>
+        <button class="buy-btnneo">Buy Now</button>
+       
+    </div>
+    <div class="image">
+        <img src="../image/banner/mm.png"> 
+    </div>
+</div>
+<div class="bannerair">
+    <div class="contentair">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<div class="iPhone17-logo">
+  <i class="fa-brands fa-apple"></i>
+  <span>MacBook Air</span>
+</div>
+        <h1 class="gradient-textair">Might takes flight.</h1>
+        <span class="hhh">Supercharged by M5</span>
+        <button class="buy-btnair">Buy Now</button>
+       
+    </div>
+    <div class="image">
+        <img src="../image/banner/mm3.png"> 
+    </div>
+</div>
+<div class="bannerpro">
+    <div class="contentpro">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<div class="iPhone17-logo">
+  <i class="fa-brands fa-apple"></i>
+  <span>MacBook Pro</span>
+</div>
+        <h1 class="gradient-textpro">Fast and furiously smart.</h1>
+        <span class="ggg">Starting at ₹184 900* </span>
+        <button class="buy-btnpro">Buy Now</button>
+       
+
+    
+
+    </div>
+    <div class="image">
+        <img src="../image/banner/mm2.png"> 
+    </div>
+</div>
 
  
 <div class="container">
@@ -366,12 +471,74 @@ titles.forEach(title => {
     title.innerText = title.innerText.substring(0, maxLength) + "...";
   }
 });
-   </script>
+</script>
+<script> 
+let slides = document.querySelectorAll(".slidecr");
+let index = 0;
+
+function showSlide(i) {
+  slides.forEach(slide => slide.classList.remove("active"));
+  slides[i].classList.add("active");
+}
+
+// Next button
+document.querySelector(".next").onclick = () => {
+  index = (index + 1) % slides.length;
+  showSlide(index);
+};
+
+// Prev button
+document.querySelector(".prev").onclick = () => {
+  index = (index - 1 + slides.length) % slides.length;
+  showSlide(index);
+};
+
+// Auto slide
+setInterval(() => {
+  index = (index + 1) % slides.length;
+  showSlide(index);
+}, 3000);
+
+</script>
+
+
+<script>
+let items = document.querySelectorAll(".slider-item");
+let current = 0;
+
+function showItem(i) {
+  items.forEach(el => el.classList.remove("active-slide"));
+  items[i].classList.add("active-slide");
+}
+
+// Next
+document.querySelector(".btn-next").onclick = function() {
+  current = (current + 1) % items.length;
+  showItem(current);
+};
+
+// Prev
+document.querySelector(".btn-prev").onclick = function() {
+  current = (current - 1 + items.length) % items.length;
+  showItem(current);
+};
+
+// Auto slide
+setInterval(function() {
+  current = (current + 1) % items.length;
+  showItem(current);
+}, 4000);
+</script>
 
 
 
-</html>
+
+
+
+
 </body>
+</html>
+
 
 
 
