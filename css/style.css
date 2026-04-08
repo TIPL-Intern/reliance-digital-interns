@@ -58,7 +58,7 @@ font-size:16px;
 color: #141414;
 font-weight: 900;
 letter-spacing: -.48px;
-line-height: 20px;
+
 margin-left: 20px;
 }
 .sub-text{
@@ -254,11 +254,12 @@ display: flex;
 .prev, .next {
   cursor: pointer;
   position: absolute;
+
   top: 30%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -269,6 +270,8 @@ display: flex;
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+ 
+  
 }
 
 .dot {
@@ -283,11 +286,6 @@ display: flex;
 .active {
   background-color: #717171;
 }
-
-
-
-
-
 
 
 
@@ -984,6 +982,12 @@ width: 100%;
 
 
 
+
+
+
+
+
+
 body {
     background-color: #f5f5f5;
 }
@@ -1023,7 +1027,155 @@ body {
   font-size: 20px;
   margin-bottom: 15px;
 }
+.bannerneo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 40px 60px;
+    margin: 30px;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+}
+.iPhone17-logo {
+  display: flex;
+  gap: 10px;
+  font-size: 35px;
+  font-weight: 600;
+  justify-content: center;
+}
+.contentneo h1 {
+    font-size: 50px;
+    margin: 10px 0;
+}
+.gradient-textneo {
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}
+.buy-btnneo {
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: 1px solid #000;
+  background-color: transparent;
+  color:black;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
 
+  .bannerair {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 40px 60px;
+    margin: 30px;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+}
+.iPhone17-logo {
+  display: flex;
+  gap: 10px;
+  font-size: 35px;
+  font-weight: 600;
+  justify-content: center;
+}
+.contentair h1 {
+    font-size: 50px;
+    margin: 10px 0;
+}
+.gradient-textair {
+    background: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}
+.hhh{
+  font-size: 20px;
+ 
+}
+.buy-btnair {
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: 1px solid #000;
+  background-color: transparent;
+  color:black;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.bannerpro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 40px 60px;
+    margin: 30px;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+}
+.iPhone17-logo {
+  display: flex;
+  gap: 10px;
+  font-size: 35px;
+  font-weight: 600;
+  justify-content: center;
+}
+.contentpro h1 {
+    font-size: 50px;
+    margin: 10px 0;
+}
+.gradient-textpro {
+    background: linear-gradient(to right, rgb(95, 91, 133), rgb(87, 87, 129), rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}
+.buy-btnpro {
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: 1px solid #000;
+  background-color: transparent;
+  color:black;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 40px 60px;
+    margin: 30px;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+}
+.iPhone17-logo {
+  display: flex;
+  gap: 10px;
+  font-size: 35px;
+  font-weight: 600;
+  justify-content: center;
+}
+.content h1 {
+    font-size: 50px;
+    margin: 10px 0;
+}
+.gradient-text {
+    background: linear-gradient(to right, purple, blue, green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}
+.buy-btn {
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: 1px solid #000;
+  background-color: transparent;
+  color:black;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
 .container {
   width: 90%;
   margin: 40px auto;
@@ -1645,6 +1797,73 @@ color: #000;
   justify-content: center;
 }
 
+.slider-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-item {
+  display: none;
+}
+
+.active-slide {
+  display: block;
+}
+
+
+.btn-prev, .btn-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn-prev { left: 10px; }
+.btn-next { right: 10px; }
+.buy-btncr {
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: 1px solid #000;
+  background-color: transparent;
+  color:black;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.gradient-textcr {
+    background: linear-gradient(to right, purple, blue, green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+}
+
+.logo-box {
+  display: flex;
+  gap: 10px;
+  font-size: 35px;
+  font-weight: 600;
+  justify-content: center;
+}
+.content h1 {
+    font-size: 50px;
+    margin: 10px 0;
+}
+.offer-card {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.offer-card img {
+  width: 100%;
+  display: block;
 .thumbs img {
   width: 70px;
   height: 70px;
@@ -1751,6 +1970,189 @@ color: #000;
   margin-bottom: 12px;
 }
 
+.offer-bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 8px 10px;
+  box-sizing: border-box;
+}
+
+
+.offer-bar .text {
+  font-size: 12px;
+}
+
+
+.banks {
+  display: flex;
+  gap: 6px;
+}
+
+.banks img {
+  height: 18px;
+  width: auto;
+  background: #fff;
+  padding: 2px;
+  border-radius: 3px;
+}
+.imageSR{
+  width: 100%;
+}
+
+
+
+
+
+
+ 
+    @media (max-width: 1024px) {
+      .banner, .bannerneo, .bannerair, .bannerpro {
+        flex-direction: column;
+        padding: 30px 20px;
+        margin: 20px;
+      }
+      .content h1, .contentneo h1, .contentair h1, .contentpro h1 {
+        font-size: 36px;
+      }
+      .iPhone17-logo, .logo-box {
+        font-size: 28px;
+        flex-wrap: wrap;
+      }
+      .buy-btn, .buy-btnneo, .buy-btnair, .buy-btnpro, .shop-btn, .btnMA, .buy-btnaw, .accessories, .buy-btncr {
+        font-size: 18px;
+        padding: 10px 22px;
+      }
+      .main-containerMAA {
+        flex-direction: column;
+        gap: 25px;
+      }
+      .yashu h2 {
+        font-size: 28px;
+      }
+      .containeraw {
+        flex-direction: column;
+        gap: 25px;
+      }
+      .cardaw {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+      }
+      .watch-logo {
+        justify-content: center;
+      }
+      .containerACC {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+      }
+      .left h1 {
+        font-size: 32px;
+      }
+      .center {
+        width: 80%;
+        margin: 0 auto;
+      }
+      .center img {
+        height: 180px;
+      }
+      .right {
+        width: 100%;
+      }
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+      .products-containerai {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 15px;
+      }
+      .dealsai h2 {
+        font-size: 28px;
+        margin-left: 15px;
+      }
+      .footeri {
+        padding: 25px 20px;
+      }
+      .footer-topi {
+        flex-direction: column;
+        gap: 25px;
+      }
+      .footer-columni {
+        width: 100%;
+      }
+      .app-section {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+      }
+      .social {
+        text-align: left;
+      }
+      .disclaimer p, .copyright {
+        font-size: 14px;
+      }
+      .offer-card {
+        max-width: 90%;
+      }
+      .container {
+        padding: 30px 15px;
+      }
+      .sub-text span {
+        font-size: 18px;
+      }
+      .hhh {
+        font-size: 18px;
+      }
+      .content h2 {
+        font-size: 28px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .banner, .bannerneo, .bannerair, .bannerpro {
+        margin: 15px;
+        padding: 20px 15px;
+      }
+      .content h1, .contentneo h1, .contentair h1, .contentpro h1 {
+        font-size: 28px;
+      }
+      .iPhone17-logo, .logo-box {
+        font-size: 24px;
+      }
+      .buy-btn, .buy-btnneo, .buy-btnair, .buy-btnpro, .shop-btn, .btnMA, .buy-btnaw, .accessories {
+        font-size: 16px;
+        padding: 8px 18px;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      .products-containerai {
+        grid-template-columns: 1fr;
+      }
+      .yashu h2 {
+        font-size: 24px;
+      }
+      .left h1 {
+        font-size: 28px;
+      }
+      .center img {
+        height: 150px;
+      }
+      .dealsai h2 {
+        font-size: 24px;
+      }
+    }
 .delivery-box {
   display: flex;
   align-items: center;
