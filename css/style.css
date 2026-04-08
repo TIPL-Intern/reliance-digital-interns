@@ -112,7 +112,7 @@ color: #fff;
   margin: 10px 0;
 }
 .price1 span {
-  color:#00b259;
+  color:#01b25a;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
@@ -1455,8 +1455,6 @@ margin: 10px 0;
 .app-buttons img {
   height: 40px;
   margin-right: 10px;
-
- 
 }
 .foot-title{
   color: #141414;
@@ -1466,7 +1464,6 @@ margin: 10px 0;
 .social {
   text-align: center;
 }
-
 .icons span {
   display: inline-block;
   width: 35px;
@@ -1515,8 +1512,290 @@ color: #000000;
 font-size: 14px;
  -webkit-line-clamp: 2;
 }
+.applepage{
+display: flex;
+  align-items: center;
+  justify-content:space-between;
+  border-radius: 0;
+  margin: 8px 0px;
+  padding: 12px;
+}
+.Appledevices h2{
+font-size:16px;
+color: #141414;
+font-weight: 900;
+letter-spacing: -.48px;
+line-height: 20px;
+justify-content: left;
+margin-left: 100px;
+margin-bottom: 30px;  
+}
+.mcsection{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 20px;
+}
+.mccard{
+ background: #fff;
+  border-radius: 12px;
+  padding: 40px;
+  transition: 0.3s;
+  border: 1px solid #eee;  
+}
+.mccard img{
+  display: block;
+  margin: 15px auto;  
+  justify-content: center;
+  justify-items: center;
+}
+.mctitle{
+  font-size: large;
+  font-weight: bolder;
+  justify-content: center;
+  justify-items: center;
+  margin-bottom: 15px;
+  color: #000000;
+  margin-left: 70px;
+  gap: 20px;
+}
+.macbuy-btn {
+  padding: 12px 25px;
+  border-radius: 40px;
+  border: 1px solid #a22525;
+  background-color: transparent;
+  color:rgb(177, 30, 30);
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.mcprice {
+  text-align: center;
+  margin: 10px 0;
+}
+.mccard button {
+  display: block;
+  margin: 10px auto;   
+}
+.macbuy-btn{
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: #0071e3;  
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+.neo2-container {  
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+  background: #f1f3f6;
+  font-family: Arial, sans-serif;
+}
 
+.neo2-filter {
+  width: 260px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+}
 
+.neo2-count {
+  background: blue;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 50%;
+  font-size: 12px;
+}
+.neo2-chip {
+  background: #dff3ec;
+  padding: 6px 10px;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 10px 0;
+}
+.neo2-section {
+  margin-top: 20px;
+}
+.neo2-section.model-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 6px 10px;
+}
+.neo2-section.model-grid h4 {
+  grid-column: span 2;
+  margin-bottom: 8px;
+}
+.neo2-section label {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.neo2-inputs {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+.neo2-inputs input {
+  width: 100%;
+  padding: 5px;
+}
+.neo2-range-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: gray;
+}
+.neo2-products {
+  flex: 1;
+}
+.neo2-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.neo2-sort {
+  border: 1px solid #ccc;
+  padding: 6px 15px;
+  border-radius: 20px;
+  background: white;
+  cursor: pointer;
+}
+.neo2-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.neo2-card {
+  background: #fff;
+  padding: 30px 15px 15px;
+  border-radius: 10px;
+  position: relative;
+  text-align: left;
+}
+
+.neo2-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+}
+.neo2-badge {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  background: #008cba;
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+.neo2-heart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: gray;
+  cursor: pointer;
+}
+.neo2-title {
+  font-size: 14px;
+  margin: 10px 0;
+  -webkit-line-clamp: 2;
+color: #000;
+}
+.neo2-mrp {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 12px;
+  display: block;
+  margin-left: 0;
+  padding-left: 0;
+  text-align: start;
+}
+
+.neo2-compare {
+  margin-top: 4px;
+  border: none;
+  background: none;
+  color: blue;
+  font:colo;
+  cursor: pointer;
+   margin-left: 0;
+  padding-left: 0;
+  text-align: left;
+}
+.neo2-compare {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 5px;
+  cursor: pointer;
+  color: #434444;  
+  font-size: 14px;
+  font-weight: bold;
+}
+.neo2-off {
+  color: #388e3c;         
+  font-size: 13px;
+  font-weight: bold;
+  margin-left: 8px;
+}
+.compare-icon {
+  width: 20px;
+  height: 20px;
+  background: #2874f0;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.filter-header i {
+  transition: 0.3s;
+}
+.filter-content {
+  display: none;
+  margin-top: 8px;
+}
+
+.neo2-section.active .filter-content {
+  display: block;
+}
+
+.neo2-section.active .filter-header i {
+  transform: rotate(180deg);
+}
+.body{
+  font-family: Arial, sans-serif;
+    background-color:#aaa;
+}
+.products-images {
+ padding: 40px;
+}
+
+.main-img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  border: 1px solid #ddd;
+  padding: 10px;
+  background: #fff;
+}
+
+.thumbs {
+  margin-top: 10px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
 
 .slider-box {
   position: relative;
@@ -1585,8 +1864,111 @@ font-size: 14px;
 .offer-card img {
   width: 100%;
   display: block;
+.thumbs img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border: 2px solid #ddd;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
+.thumbs img:hover,
+.thumbs img.active {
+  border-color: #007bff;
+  transform: scale(1.05);
+ }
+    
+.badgeps{
+ background: #007fad;
+ font-weight: 500;
+ font-size: 11px;
+ line-height: 16px;
+ padding: 4px 8px;
+ border-radius:12px;
+ width: max-content;
+ letter-spacing: -.005em;
+ color: #fff;
+}
+.productps-title h1 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #141414;
+}
+   
+.rating {
+ color: #141414;
+ font-family: JioType;
+ font-size: 16px;
+ font-style: normal;
+ font-weight: 700;
+ line-height: 24px;
+ letter-spacing: -.08px;
+}
+
+.priceps1 {
+  color: rgba(0, 0, 0, .65);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -.07px;
+  margin-left: 10px;
+}
+.priceps span{
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -.03em;
+  margin: 4px 0 6px 0;
+  color: #141414;
+  align-items: center;
+}
+.offerps{
+  color: rgba(0, 0, 0, .65);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -.07px;
+  margin-left: 10px;
+}
+.offerps span{
+  text-decoration: line-through;
+  color: #aaa;
+}
+.mrpps {
+  color: #aaa;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing:  -.005em;
+  margin-left: 10px;
+}
+.mrpline{
+ text-decoration: line-through;
+ color: #aaa;
+ letter-spacing:  -.005em;
+}
+.mrp{
+ font-weight: 700;
+ font-size: 12px;
+ line-height: 16px;
+ color: #00b259;
+ margin-left: 12px;
+ letter-spacing:  -.005em;
+ }
+  
+.delivery-container {
+  border-top: 1px solid #f5f5f5;
+  max-width: 900px;
+  margin: auto;
+}
+
+.delivery-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
 
 .offer-bar {
   position: absolute;
@@ -1771,3 +2153,514 @@ font-size: 14px;
         font-size: 24px;
       }
     }
+.delivery-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 12px 18px;
+  width: 350px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pincode {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.divider {
+  width: 1px;
+  height: 20px;
+  background: #ccc;
+}
+
+.change-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.target {
+  color: #555;
+  font-size: 14px;
+}
+
+.change-btn {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.SelectedAC{
+ display: flex;
+ gap: 8px;
+}
+
+.AC{
+ margin: 0;
+ border-top: 1px solid #f5f5f5;
+ border-bottom: 1px solid #f5f5f5;
+ padding: 10px 20px;
+}
+
+.AC h3{
+ font-weight: 900;
+ font-size: 16px;
+ line-height: 20px;
+ letter-spacing: -.03em;
+ color: #141414;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+.AC p{
+ margin-top: 4px;
+ font-size: 14px;
+ color: rgba(0, 0, 0, .65);
+}
+
+.offers-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.offers-title {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.offers-title span {
+  color: gray;
+  font-size: 14px;
+}
+
+.offers-row {
+  display: flex;
+  gap: 20px;
+}
+
+.offer-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  width: 32%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.offer-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.offer-header h4 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.iconps {
+  width: 35px;
+  height: 35px;
+  background: #e6f4f1;
+  color: #0aa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 16px;
+}
+
+.offer-card p {
+  font-size: 13px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.offer-card a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.offer-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.offer-footer span {
+  font-size: 13px;
+  color: #555;
+}
+.arrowps {
+  background: #eee;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.warranty-section {
+  max-width: 1200px;
+  margin: auto;
+}
+.warranty-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 4px;
+}
+.warranty-section p {
+  color: #666;
+  margin-bottom: 24px;
+}
+.warranty-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.warranty-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  flex: 1 1 calc(33.333% - 20px);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.card-header img {
+  width: 40px;
+  height: 40px;
+}
+.card-header h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+.subheading {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 2px 0 0;
+}
+.card-text {
+  margin: 15px 0;
+  font-size: 0.9rem;
+  color: #555;
+  flex-grow: 1;
+}
+.card-footer {
+  margin-top: auto;
+}
+.priceps {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #000;
+}
+.mrp2 {
+  color: #777;
+  font-size: 0.85rem;
+  margin: 2px 0 10px;
+}
+
+.more {
+  text-decoration: none;
+  color: #009e48;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.see-more {
+  color: #0d6efd; 
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.see-more:hover {
+  color: #0d6efd; 
+}
+.description-wrapper {
+  background: #fff;
+  padding: 10px;
+}
+.notice-bar {
+  display: flex;
+  align-items: start;
+  justify-content:space-between;
+  background: #aaa;
+}
+
+.notice-heading {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000; 
+  justify-self: flex-start;
+}
+
+.section-title {
+  font-weight: 600;
+   font-siz: 18px;
+  margin: 10px 0;
+}
+
+.image-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; 
+}
+.more-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; 
+}
+
+.desc-img {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+}
+
+.footer-note {
+  font-size: 11px;
+  color: #777;
+  margin-top: 10px;
+}
+
+.see-less {
+  font-size: 12px;
+  color: #0d6efd;
+  cursor: pointer;
+}
+
+.see-less:hover {
+  text-decoration: underline;
+}
+.toggle-btn {
+  font-size: 13px;
+  color: #0d6efd;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.toggle-btn:hover {
+  text-decoration: underline;
+}
+
+.specs-container {
+  width: 85%;
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.title {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+
+.spec-section {
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.section-title {
+  background-color: #e9edf5;
+  padding: 10px 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+
+.spec-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+}
+
+.spec-row span:first-child {
+  color: #555;
+  width: 50%;
+}
+
+.spec-row span:last-child {
+  color: #000;
+  font-weight: 500;
+  width: 50%;
+  text-align: left;
+}
+
+.small-text {
+  font-size: 12px;
+  color: #666;
+}
+@media (max-width: 1000px) {
+            .mcsection {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 50px;
+            }
+            .applepage {
+                padding: 1rem;
+            }
+            .mccard {
+                padding: 1.2rem;
+            }
+            .mctitle {
+                font-size: 1.6rem;
+                justify-content: centre;
+                margin-left: 130px;
+                align-items: center;
+            }
+            .footer-topi {
+                grid-template-columns: 2fr 2fr;
+                gap: 1rem;
+            }
+            .app-section {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+@media (min-width: 600px) {
+            .neo2-container {
+                padding: 24px;
+                gap: 24px;
+            }
+            .neo2-grid {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 20px;
+            }
+            .neo2-card {
+                padding: 20px 16px 18px;
+            }
+            .neo2-title {
+                font-size: 15px;
+            }
+            .neo2-price {
+                font-size: 20px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .neo2-container {
+                flex-direction: row;
+                align-items: flex-start;
+                padding: 30px;
+                gap: 28px;
+            }
+            .neo2-filter {
+                width: 280px;
+                position: sticky;
+                top: 20px;
+                flex-shrink: 0;
+            }
+            .neo2-products {
+                width: auto;
+            }
+            .neo2-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 24px;
+            }
+        }
+
+        @media (min-width: 1300px) {
+            .neo2-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            .neo2-filter {
+                width: 300px;
+            }
+        }
+        @media (max-width: 480px) {
+            .neo2-container {
+                padding: 12px;
+            }
+            .neo2-filter {
+                padding: 14px;
+            }
+            .neo2-card {
+                padding: 16px 14px;
+                grid-template-columns: repeat(4, 1fr);
+                
+            }
+            .neo2-price {
+                font-size: 20px;
+            }
+            .neo2-title {
+                font-size: 15px;
+            }
+            .neo2-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .result-count {
+                font-size: 13px;
+            }
+            .neo2-sort {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+        @media (max-width: 2000px) {
+      body {
+        padding: 16px;
+      }
+      .neo2-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 18px 20px;
+      }
+      .neo2-filter {
+        padding: 14px 20px;
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .filter-group {
+        justify-content: flex-start;
+      }
+      .neo2-card-grid {
+        padding: 20px;
+        gap: 18px;
+      }
+      .neo2-price {
+        font-size: 1.45rem;
+      }
+    @media (max-width: 1023px) {
+      .neo2-filter {
+        display: none 
+      }
+      .neo2-container {
+        gap: 0;
+      }
+      .neo2-products {
+        width: 100%;
+      }
+      body {
+        padding: 14px;
+      }
+    }
+  }
+  
