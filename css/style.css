@@ -2115,3 +2115,150 @@ color: #000;
   font-size: 12px;
   color: #666;
 }
+@media (max-width: 1000px) {
+            .mcsection {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 50px;
+            }
+            .applepage {
+                padding: 1rem;
+            }
+            .mccard {
+                padding: 1.2rem;
+            }
+            .mctitle {
+                font-size: 1.6rem;
+                justify-content: centre;
+                margin-left: 130px;
+                align-items: center;
+            }
+            .footer-topi {
+                grid-template-columns: 2fr 2fr;
+                gap: 1rem;
+            }
+            .app-section {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+@media (min-width: 600px) {
+            .neo2-container {
+                padding: 24px;
+                gap: 24px;
+            }
+            .neo2-grid {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 20px;
+            }
+            .neo2-card {
+                padding: 20px 16px 18px;
+            }
+            .neo2-title {
+                font-size: 15px;
+            }
+            .neo2-price {
+                font-size: 20px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .neo2-container {
+                flex-direction: row;
+                align-items: flex-start;
+                padding: 30px;
+                gap: 28px;
+            }
+            .neo2-filter {
+                width: 280px;
+                position: sticky;
+                top: 20px;
+                flex-shrink: 0;
+            }
+            .neo2-products {
+                width: auto;
+            }
+            .neo2-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 24px;
+            }
+        }
+
+        @media (min-width: 1300px) {
+            .neo2-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            .neo2-filter {
+                width: 300px;
+            }
+        }
+        @media (max-width: 480px) {
+            .neo2-container {
+                padding: 12px;
+            }
+            .neo2-filter {
+                padding: 14px;
+            }
+            .neo2-card {
+                padding: 16px 14px;
+                grid-template-columns: repeat(4, 1fr);
+                
+            }
+            .neo2-price {
+                font-size: 20px;
+            }
+            .neo2-title {
+                font-size: 15px;
+            }
+            .neo2-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .result-count {
+                font-size: 13px;
+            }
+            .neo2-sort {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+        @media (max-width: 2000px) {
+      body {
+        padding: 16px;
+      }
+      .neo2-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 18px 20px;
+      }
+      .neo2-filter {
+        padding: 14px 20px;
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .filter-group {
+        justify-content: flex-start;
+      }
+      .neo2-card-grid {
+        padding: 20px;
+        gap: 18px;
+      }
+      .neo2-price {
+        font-size: 1.45rem;
+      }
+    @media (max-width: 1023px) {
+      .neo2-filter {
+        display: none 
+      }
+      .neo2-container {
+        gap: 0;
+      }
+      .neo2-products {
+        width: 100%;
+      }
+      body {
+        padding: 14px;
+      }
+    }
+  }
+  
