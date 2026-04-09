@@ -985,9 +985,6 @@ width: 100%;
 
 
 
-
-
-
 body {
     background-color: #f5f5f5;
 }
@@ -1267,7 +1264,7 @@ margin: 0 0 20px;
   margin: 0 0 20px;
   font-size: 35px;
 }
-.buy-btnaw {
+ .button-aww {
   padding: 12px 25px;
   border-radius: 25px;
   border: 1px solid #000;
@@ -1434,6 +1431,10 @@ margin: 10px 0;
   color:rgba(0, 0, 0, .65);;
   font-weight: bold;
 }
+
+
+
+
 
 
 .app-section {
@@ -1864,6 +1865,7 @@ color: #000;
 .offer-card img {
   width: 100%;
   display: block;
+}
 .thumbs img {
   width: 70px;
   height: 70px;
@@ -2013,6 +2015,84 @@ color: #000;
 
 
 
+
+
+
+.airsection{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+.aircard{
+ background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  transition: 0.3s;
+  border: 1px solid #eee;  
+}
+.aircard img{
+  display: block;
+  margin: 15px auto;  
+  justify-content: center;
+  justify-items: center;
+}
+.airtitle{
+  font-size: large;
+  font-weight: bolder;
+  justify-content: center;
+  justify-items: center;
+  margin-bottom: 15px;
+  color: #000000;
+  margin-left: 70px;
+  gap: 20px;
+}
+.airbuy-btn {
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: 1px solid #3ba0de;
+  background-color: transparent;
+  color:rgb(55, 30, 238);
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.airprice {
+  text-align: center;
+  margin: 10px 0;
+}
+.aircard button {
+  display: block;
+  margin: 10px auto;   
+}
+.high{
+  font-weight: 800;
+  color: #000;
+}
+
+.cart-container {
+  width:50%;
+  margin: 40px auto;
+  padding: 40px 20px ;
+  background-color: #ffffff;
+  border-radius: 20px;
+  text-align: center;
+
+}
+
+.shop-cart {
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: 1px solid #000;
+  background-color: #0a2885;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+
+
+
+
  
     @media (max-width: 1024px) {
       .banner, .bannerneo, .bannerair, .bannerpro {
@@ -2077,20 +2157,11 @@ color: #000;
         gap: 15px;
         padding: 15px;
       }
-      .dealsai h2 {
-        font-size: 28px;
-        margin-left: 15px;
-      }
-      .footeri {
-        padding: 25px 20px;
-      }
-      .footer-topi {
-        flex-direction: column;
-        gap: 25px;
-      }
-      .footer-columni {
-        width: 100%;
-      }
+      @media (max-width: 768px) {
+    .footeri {
+        display: none;
+    }
+}
       .app-section {
         flex-direction: column;
         gap: 20px;
@@ -2153,6 +2224,14 @@ color: #000;
         font-size: 24px;
       }
     }
+
+
+
+
+
+
+
+
 .delivery-box {
   display: flex;
   align-items: center;
