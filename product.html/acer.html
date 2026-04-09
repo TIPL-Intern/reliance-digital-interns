@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Gallery</title>
+<link rel="stylesheet" href="../css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+ <header class="main-header">
+
+<a href="http://127.0.0.1:5500/home.html"> 
+  <div class="header-left">
+    <img src="../image/banner/reliance.png" alt="Logo" class="logo">
+  </div>
+  </a>
+  <div class="header-center">
+    
+    <input type="text" placeholder="Search Products & Brands">
+  </div>
+
+  <div class="header-right">
+    <div class="top-links">
+      <span>Orders</span>
+      <span>Contact us</span>
+      <span>Resource Centre</span>
+      <span>Find a Store</span>
+    </div>
+
+   
+    <div class="bottom-links">
+      <div class="location">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>400001 - Mumbai</span>
+        <i class="fa-solid fa-pen"></i>
+      </div>
+
+      <span><i class="fa-solid fa-cart-shopping"></i> Cart</span>
+      <span><i class="fa-solid fa-heart"></i> Wishlist</span>
+      <span><i class="fa-solid fa-user"></i> Login</span>
+    </div>
+  </div>
+</header>
+<div class="category-container">
+  <button class="cat-btn left" onclick="scrollCategory(-1)">❮</button>
+  <div class="category-bar" id="categoryBar"">
+
+  <div class="category-item">
+    <img src="../image/banner/aclogo.png">
+    <p>Air Conditioners</p>
+  </div>
+
+  <div class="category-item">
+    <img src="../image/banner/tvlogo.png">
+    <p>Television</p>
+  </div>
+
+  <div class="category-item">
+    <img src="../image/banner/mobilelogo.png">
+    <p>Mobiles</p>
+  </div>
+
+  <div class="category-item">
+    <img src="../image/banner/air coolers.png">
+    <p>Air Coolers</p>
+  </div>
+
+  <div class="category-item">
+    <img src="../image/banner/audiologo.png">
+    <p>Audio</p>
+  </div>
+
+  <div class="category-item">
+    <img src="../image/banner/tablets.png">
+    <p>Tablets</p>
+  </div>
+
+  <div class="category-item">
+    <img src="../image/banner/refriglogo.png">
+    <p>Refrigerators</p>
+  </div>
+
+  <div class="category-item">
+    <img src="../image/banner/laptoplogo.png">
+    <p>Laptop</p>
+  </div>
+<a href="http://127.0.0.1:5500/product.html/apple.html">
+  <div class="category-item">
+    <img src="../image/banner/applelogo.png">
+    <p>Apple Store</p>
+  </div>
+</a>
+  <div class="category-item">
+    <img src="../image/banner/smartlogo.png">
+    <p>Smart Wearables</p>
+  </div>
+    <div class="category-item">
+    <img src="../image/banner/Smartappliances.png">
+    <p>Smart Appliances</p>
+  </div>
+    <div class="category-item">
+    <img src="../image/banner/washing machinelogo.png">
+    <p>Washing Machine</p>
+    
+  </div>
+  <button class="cat-btn right" onclick="scrollCategory(1)">❯</button>
+  </div>
+</div>
+
+<div class="products-images">
+  <div class="row">
+
+    <div class="col-md-6">
+      <img id="mainImage" src="../image/banner/acer.png" class="main-img">
+
+      <div class="thumbs">
+        <img src="../image/banner/acer.png" class="thumb active" onclick="changeImage(this)">
+        <img src="../image/banner/thumbs1.png" class="thumb" onclick="changeImage(this)">
+        <img src="../image/banner/thumbs2.png" class="thumb" onclick="changeImage(this)">
+        <img src="../image/banner/thumbs3.png" class="thumb" onclick="changeImage(this)">
+      </div>
+    </div>
+
+<div class="col-md-6">
+
+  <div class="productps-title">
+  <span class="badgeps">₹2000 Off + 7.5% Off CC EMI*</span>
+  <h1>Acer 1 Ton 3 Star Smart Split AC (Copper, 5 in 1 Convertible, Anti-Bacterial PM 1.0 Filter, Cools at 55 degree Celsius Temp, 10 Mtrs Long Air Throw, 2025 Model), AR10AS3IS1HLE25</h1>
+  <p class="rating">⭐<span class="rating">(2.8)</span> (4 Ratings)</p>
+ <p class="priceps1"> Deal price<span class="priceps"> ₹24,490.00 </span></p>
+  <p class="offerps">Offer Price <span class="offeps">₹25,490.00</span></p>
+  <p class="mrpps">MRP<span class="mrpline"> ₹39,150.00</span> (Inclusive of all taxes)<span class="mrp">37% OFF</span> </p>
+  </div>
+
+<div class="delivery-container">
+
+  <h3 class="delivery-title">Delivery Related</h3>
+
+  <div class="delivery-box">
+    
+    <div class="location">
+      <span class="pincode">560079</span>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="change-section">
+      <span class="target">⌖</span>
+      <a href="#" class="change-btn">Change</a>
+    </div>
+  </div>
+</div>
+
+<div class="SelectedAC">
+    <section class="AC">
+    <h3>Free Installation On Selected ACs</h3>
+    <p>Save Up to Rs.1500. Read T&C</p>
+    </section>
+  </div>
+
+<div class="offers-container">
+  
+  <h3 class="offers-title">Offers available <span>• 3</span></h3>
+
+  <div class="offers-row">
+
+    <div class="offer-card">
+      <div class="offer-header">
+        <div class="iconps">🏷️</div>
+        <h4>EMI Offers</h4>
+      </div>
+      <p>EMI starts from ₹1,516.29/month</p>
+      <div class="offer-footer">
+        <span>+95 more Offers</span>
+        <div class="arrowps">›</div>
+      </div>
+    </div>
+
+    <div class="offer-card">
+      <div class="offer-header">
+        <div class="iconps">🏦</div>
+        <h4>Payment Page Offers</h4>
+      </div>
+      <p>7.5% Instant discount up to Rs 7,500 with IDFC Credit Card EMI <a href="#">Read - T&C</a></p>
+      <div class="offer-footer">
+        <span>+4 more Offers</span>
+        <div class="arrowps">›</div>
+      </div>
+    </div>
+
+    <div class="offer-card">
+      <div class="offer-header">
+        <div class="iconps">%</div>
+        <h4>Cart Promotions</h4>
+      </div>
+      <p>Flat 2000 Off At Checkout</p>
+      <div class="offer-footer">
+        <span>View Details</span>
+        <div class="arrowps">›</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <section class="warranty-section">
+    <h2>Extended Warranty</h2>
+    <p>Protect your purchase beyond manufacture warranty</p>
+    <div class="warranty-container">
+     
+      <div class="warranty-card">
+        <div class="card-header">
+          <img src="https://cdn.jiostore.online/v2/jmd-asp/jdprod/wrkr/products/pictures/item/free/original/resq/600562716/0/8kIjAKi7I3-RCP-Extended-Warranty-AC.jpg" alt="resQ Logo">
+          <div>
+            <h3>1 Year - resQ Care Plan (RCP) Extended Warranty - Air Conditioner</h3>
+            <p class="subheading">Extend Warranty</p>
+          </div>
+        </div>
+        <p class="card-text">
+          RCP (resQ Care Plans) presently can only be availed for purchases made at Reliance Retail network; either Online or from our Stores - subject to T & C. 
+          Extended Warranty will activate only after expiry of Brand/manufacturer Warranty. Covers Compressor, Fan Motor, Circuit Board, remote control & more. 
+          Zero service cost. Gas Charging of compressor free of cost. 1 wet & 1 dry service of AC. Visit your home and repair the product. 365 days support.
+        </p>
+        <div class="card-footer">
+          <div class="priceps">₹3,699.00 </div>
+          <p class="mrp2">MRP (Inclusive of all taxes)</p>
+        </div>
+        <button class="btn btn-outline-primary rounded-pill px-4">Add</button>
+        <a href="#" class="more">Read more about benefits</a>
+      </div>
+    
+      <div class="warranty-card">
+        <div class="card-header">
+          <img src="https://cdn.jiostore.online/v2/jmd-asp/jdprod/wrkr/products/pictures/item/free/original/resq/600562725/0/ODKf9V1XTb-RCP-Extended-Warranty-AC.jpg" alt="resQ Logo">
+          <div>
+            <h3>2 Year - resQ Care Plan (RCP) Extended Warranty - Air Conditioner</h3>
+            <p class="subheading">Extend Warranty</p>
+          </div>
+        </div>
+        <p class="card-text">
+          RCP (resQ Care Plans) presently can only be availed for purchases made at Reliance Retail network; either Online or from our Stores - subject to T & C. 
+          Extended Warranty will activate only after expiry of Brand/manufacturer Warranty. Covers Compressor, Fan Motor, Circuit Board, remote control & more. 
+          Zero service cost. Gas Charging of compressor free of cost. 1 wet & 1 dry service of AC. Visit your home and repair the product. 365 days support.
+        </p>
+        <div class="card-footer">
+          <div class="priceps">₹5,399.00</div>
+          <p class="mrp2">MRP (Inclusive of all taxes)</p>
+        </div>
+        <button class="btn btn-outline-primary rounded-pill px-4">Add</button>
+        <a href="#" class="more">Read more about benefits</a>
+      </div>
+     
+      <div class="warranty-card">
+        <div class="card-header">
+          <img src="https://cdn.jiostore.online/v2/jmd-asp/jdprod/wrkr/products/pictures/item/free/original/resq/600562734/0/XTxnOcFJY1-RCP-Extended-Warranty-AC.jpg" alt="resQ Logo">
+          <div>
+            <h3>3 Year - resQ Care Plan (RCP) Extended Warranty - Air Conditioner</h3>
+            <p class="subheading">Extend Warranty</p>
+          </div>
+        </div>
+        <p class="card-text">
+          RCP (resQ Care Plans) presently can only be availed for purchases made at Reliance Retail network; either Online or from our Stores - subject to T & C. 
+          Extended Warranty will activate only after expiry of Brand/manufacturer Warranty. Covers Compressor, Fan Motor, Circuit Board, remote control & more. 
+          Zero service cost. Gas Charging of compressor free of cost. 1 wet & 1 dry service of AC. Visit your home and repair the product. 365 days support.
+        </p>
+        <div class="card-footer">
+          <div class="priceps">₹7,999.00</div>
+          <p class="mrp2">MRP (Inclusive of all taxes)</p>
+        </div>
+        <button class="btn btn-outline-primary rounded-pill px-4">Add</button>
+        <a href="#" class="more">Read more about benefits</a>
+      </div>
+    </div>
+  </section>     
+
+<div class="container my-5 key-feature-box">
+
+  <h5 class="fw-bold">Key Features</h5>
+
+  <ul class="feature-list mt-3">
+    <li>5 in 1 Convertible</li>
+    <li>Anti-Bacterial PM 1.0 Filter</li>
+    <li>Cools at 55°C Temp</li>
+    <li>10 Mtrs Long Air Throw</li>
+    
+    <div class="more-features d-none">
+      <li>Auto Clean Technology</li>
+      <li>Energy Efficient Mode</li>
+      <li>Silent Operation</li>
+      <li>Inverter Compressor</li>
+      <li>100% Copper</li>
+     <li>Hidden Display</li>
+      <li>Back-lit Remote</li>
+     <li>4-way Swing</li>
+      <li>Aisense Technology</li>
+      <li>ArcticWrap Cooling</li>
+    </div>
+  </ul>
+
+ 
+  <div class="text-center mt-3">
+    <span class="see-more" onclick="toggleFeatures()">
+      See More ▼
+    </span>
+  </div>
+
+</div>
+
+<div class="container my-3 description-wrapper">
+
+  
+ <div class="notice-bar">
+  <strong class="notice-heading">Notice any issues?</strong>
+  <a href="#">Report here</a>
+</div>
+
+ 
+  <h6 class="section-title">Description</h6>
+<div class="image-stack">
+
+  
+  <img src="../image/banner/Aacer1.png" class="desc-img">
+  <img src="../image/banner/Aacer6.png" class="desc-img">
+
+  
+  <div class="more-content d-none">
+    <img src="../image/banner/Aacer3.png" class="desc-img">
+    <img src="../image/banner/Aacer4.png" class="desc-img">
+    <img src="../image/banner/Aacer5.png" class="desc-img">
+  </div>
+
+</div>
+<p class="footer-note text-center">
+    *This icon & image is for illustration purpose only, actual image may vary.
+  </p>
+
+<div class="text-center mt-2">
+  <span class="toggle-btn" onclick="toggleContent()">See More ▼</span>
+</div>
+</div>
+
+<div class="specs-container">
+  <h2 class="title">Specifications</h2>
+
+
+  <div class="spec-section">
+    <div class="section-title">General Information</div>
+    <div class="spec-row"><span>Item Code</span><span>581110888</span></div>
+    <div class="spec-row"><span>Brand</span><span>Acer</span></div>
+    <div class="spec-row"><span>Model</span><span>AR10AS3I1HLE25</span></div>
+    <div class="spec-row"><span>Colour</span><span>White</span></div>
+    <div class="spec-row"><span>Launch Year</span><span>2025</span></div>
+  </div>
+
+ 
+  <div class="spec-section">
+    <div class="section-title">Operations</div>
+    <div class="spec-row"><span>Approx. Room Size</span><span>Upto 110 sq.ft.</span></div>
+    <div class="spec-row"><span>Auto Air Swing</span><span>Yes</span></div>
+    <div class="spec-row"><span>Auto Clean Function</span><span>Yes</span></div>
+    <div class="spec-row"><span>Auto Restart</span><span>Yes</span></div>
+    <div class="spec-row"><span>Condenser Coil</span><span>Copper</span></div>
+    <div class="spec-row"><span>Inverter Technology</span><span>Yes</span></div>
+    <div class="spec-row"><span>Sleep Mode</span><span>Yes</span></div>
+    <div class="spec-row"><span>Timer</span><span>Yes</span></div>
+    <div class="spec-row"><span>Tonnage</span><span>1 Ton</span></div>
+    <div class="spec-row"><span>Air Direction</span><span>4-way</span></div>
+    <div class="spec-row"><span>Air Purifier</span><span>Yes</span></div>
+    <div class="spec-row"><span>Cooling Capacity</span><span>3300 W</span></div>
+    <div class="spec-row"><span>Filter Types</span><span>PM 1.0 Filter</span></div>
+    <div class="spec-row"><span>Refrigerant</span><span>R32</span></div>
+    <div class="spec-row"><span>Speed Settings</span><span>5</span></div>
+    <div class="spec-row"><span>Stabilizer Free Operation</span><span>Yes</span></div>
+  </div>
+
+  <div class="spec-section">
+    <div class="section-title">Physical Dimensions</div>
+    <div class="spec-row"><span>Depth (Main Unit)</span><span>32.5 cm</span></div>
+    <div class="spec-row"><span>Depth (Outdoor Unit)</span><span>52 cm</span></div>
+    <div class="spec-row"><span>Height (Main Unit)</span><span>26.5 cm</span></div>
+    <div class="spec-row"><span>Height (Outdoor Unit)</span><span>35 cm</span></div>
+    <div class="spec-row"><span>Weight (Main Unit)</span><span>9.3 kg</span></div>
+    <div class="spec-row"><span>Weight (Outdoor Unit)</span><span>20.8 kg</span></div>
+    <div class="spec-row"><span>Width (Main Unit)</span><span>83.5 cm</span></div>
+  </div>
+
+  <div class="spec-section">
+    <div class="section-title">Certificates & Ratings</div>
+    <div class="spec-row"><span>BEE STAR Rating</span><span>3 Star</span></div>
+    <div class="spec-row"><span>BEE STAR Rating Disclaimer</span>
+      <span class="small-text">Ratings are valid for a specific duration of time and may undergo revisions from time to time.</span>
+    </div>
+  </div>
+
+  <div class="spec-section">
+    <div class="section-title">Power Details</div>
+    <div class="spec-row"><span>Power Consumption</span><span>1090 Watt</span></div>
+  </div>
+
+  <div class="spec-section">
+    <div class="section-title">In The Box & Warranty</div>
+    <div class="spec-row"><span>Warranty</span><span>1 Year</span></div>
+    <div class="spec-row"><span>PCB Warranty</span><span>1 year comprehensive</span></div>
+    <div class="spec-row"><span>In The Box</span><span>Outdoor Unit</span></div>
+  </div>
+
+</div>
+</div>
+  <footer class="footeri">
+
+  <div class="footer-topi">
+    
+    <div class="footer-columni">
+      <h4>Product Categories</h4>
+      <ul>
+        <li>Smartphones</li>
+        <li>Laptops</li>
+        <li>DSLR Cameras</li>
+        <li>Televisions</li>
+        <li>Air Conditioners</li>
+        <li>Refrigerator</li>
+        <li>Kitchen Appliances</li>
+        <li>Accessories</li>
+        <li>Personal Care & Grooming</li>
+      </ul>
+    </div>
+
+    <div class="footer-columni">
+      <h4>Site Info</h4>
+      <ul>
+        <li>About</li>
+        <li>Services</li>
+        <li>Site Map</li>
+        <li>Gift Cards</li>
+        <li>Corporate Enquiries</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+
+    <div class="footer-columni">
+      <h4>Resource Center</h4>
+      <ul>
+        <li>Buying Guides</li>
+        <li>Manuals</li>
+        <li>How To's</li>
+        <li>Compare Products</li>
+        <li>Nearest Store</li>
+      </ul>
+    </div>
+
+    <div class="footer-columni">
+      <h4>Policies</h4>
+      <ul>
+        <li>Terms of Use</li>
+        <li>FAQs</li>
+        <li>Returns Policy</li>
+        <li>Privacy Policy</li>
+        <li>Pricing Policy</li>
+      </ul>
+    </div>
+
+  </div>
+
+
+  <div class="app-section">
+    <div class="app-left">
+    <div class="footer-left">
+    <img src="../image/banner/digg.png" alt="Logo" class="logo">
+  </div>
+     
+      <p span class="foot-title">Experience reliance digital app on mobile</p>
+    </div>
+
+    <div class="app-buttons">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+    </div>
+
+    <div class="social">
+      <p span class="foot1-title">Follow us</p>
+      <div class="icons">
+        <span>F</span>
+        <span>X</span>
+        <span>▶</span>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="disclaimer">
+    <h4>Disclaimer</h4>
+    <p>
+     Product prices, offers and availability are subject to change from time to time. All prices are inclusive of taxes. Product colours & images are only for illustration and they may not exactly match with the actual product. Product specs are subject to change & may vary from actual product. While every care is taken to avoid inaccuracies in content, these are provided as is, without warranty of any kind.
+    </p>
+  </div>
+
+
+
+<div class="dividerai"> </div>
+  <div class="copyright">
+    © 2023 Reliance Digital. All rights reserved.
+  </div>
+</footer>
+
+
+
+<script>
+  function changeImage(element) {
+  
+    document.getElementById("mainImage").src = element.src;
+
+    let thumbs = document.querySelectorAll(".thumb");
+    thumbs.forEach(img => img.classList.remove("active"));
+
+    element.classList.add("active");
+  }
+</script>
+
+<script>
+function toggleContent() {
+  const moreContent = document.querySelector(".more-content");
+  const btn = document.querySelector(".toggle-btn");
+
+  moreContent.classList.toggle("d-none");
+  moreContent.classList.toggle("d-flex");
+
+  if (moreContent.classList.contains("d-none")) {
+    btn.innerHTML = "See More ▼";
+  } else {
+    btn.innerHTML = "See Less ▲";
+  }
+}
+</script>
+
+<script>
+function toggleFeatures() {
+  const more = document.querySelector(".more-features");
+  const btn = document.querySelector(".see-more");
+
+  more.classList.toggle("d-none");
+
+  if (more.classList.contains("d-none")) {
+    btn.innerHTML = "See More ▼";
+  } else {
+    btn.innerHTML = "See Less ▲";
+  }
+}
+</script>
+</body>
+</html>
+
