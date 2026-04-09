@@ -733,6 +733,7 @@ margin-bottom: 20px;
   font-weight: bold;
   color: #000000;
   margin: 10px 0;
+  margin-left: 0px;
 }
 .priceac span{
   color:#00b259;
@@ -1055,8 +1056,6 @@ width: 100%;
   background: linear-gradient(to top, rgba(0, 120, 180, 0.7), transparent);
    backdrop-filter: blur(6px); 
 }
-
-
 .overlay h3 {
   display: inline-block;
   background: rgba(255,255,255,0.3);
@@ -1078,8 +1077,507 @@ width: 100%;
   font-weight: 400 bold;
   margin-bottom: 8px;
   text-align: center;
-  
+}
+.applepage{
+display: flex;
+  align-items: center;
+  justify-content:space-between;
+  border-radius: 0;
+  margin: 8px 0px;
+  padding: 12px;
+}
+.Appledevices h2{
+font-size:16px;
+color: #141414;
+font-weight: 900;
+letter-spacing: -.48px;
+line-height: 20px;
+justify-content: left;
+margin-left: 100px;
+margin-bottom: 30px;  
+}
+.mcsection{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 20px;
+}
+.mccard{
+ background: #fff;
+  border-radius: 12px;
+  padding: 40px;
+  transition: 0.3s;
+  border: 1px solid #eee;  
+}
+.mccard img{
+  display: block;
+  margin: 15px auto;  
+  justify-content: center;
+  justify-items: center;
+}
+.mctitle{
+  font-size: large;
+  font-weight: bolder;
+  justify-content: center;
+  justify-items: center;
+  margin-bottom: 15px;
+  color: #000000;
+  margin-left: 70px;
+  gap: 20px;
+}
+.macbuy-btn {
+  padding: 12px 25px;
+  border-radius: 40px;
+  border: 1px solid #a22525;
+  background-color: transparent;
+  color:rgb(177, 30, 30);
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.mcprice {
+  text-align: center;
+  margin: 10px 0;
+}
+.mccard button {
+  display: block;
+  margin: 10px auto;   
+}
+.macbuy-btn{
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: #0071e3;  
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+.neo2-container {  
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+  background: #f1f3f6;
+  font-family: Arial, sans-serif;
+}
+.neo2-filter {
+  width: 260px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+}
+.neo2-count {
+  background: blue;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 50%;
+  font-size: 12px;
+}
+.neo2-chip {
+  background: #dff3ec;
+  padding: 6px 10px;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 10px 0;
+}
+.neo2-section {
+  margin-top: 20px;
+}
+.neo2-section.model-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 6px 10px;
+}
+.neo2-section.model-grid h4 {
+  grid-column: span 2;
+  margin-bottom: 8px;
+}
+.neo2-section label {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.neo2-inputs {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+.neo2-inputs input {
+  width: 100%;
+  padding: 5px;
+ .button-aww {
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: 1px solid #000;
+  background-color: transparent;
+  color:black;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.neo2-range-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: gray;
+}
+.neo2-products {
+  flex: 1;
+}
+.neo2-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.neo2-sort {
+  border: 1px solid #ccc;
+  padding: 6px 15px;
+  border-radius: 20px;
+  background: white;
+  cursor: pointer;
+}
+.neo2-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.neo2-card {
+  background: #fff;
+  padding: 30px 15px 15px;
+  border-radius: 10px;
+  position: relative;
+  text-align: left;
+}
+
+.neo2-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+}
+.neo2-badge {
+  position: absolute;
+  top: 1px;
+  left: 10px;
+  background: #008cba;
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+.neo2-heart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: gray;
+  cursor: pointer;
+}
+.neo2-title {
+  font-size: 14px;
+  margin: 10px 0;
+  -webkit-line-clamp: 2;
+color: #000;
+}
+.neo2-mrp {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 12px;
+  display: block;
+  margin-left: 0;
+  padding-left: 0;
+  text-align: start;
+}
+.neo2-compare {
+  margin-top: 4px;
+  border: none;
+  background: none;
+  color: blue;
+  font:colo;
+  cursor: pointer;
+   margin-left: 0;
+  padding-left: 0;
+  text-align: left;
+}
+.neo2-compare {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 5px;
+  cursor: pointer;
+  color: #434444;  
+  font-size: 14px;
+  font-weight: bold;
+}
+.neo2-off {
+  color: #388e3c;         
+  font-size: 13px;
+  font-weight: bold;
+  margin-left: 8px;
+}
+.compare-icon {
+  width: 20px;
+  height: 20px;
+  background: #2874f0;
+  color: white;
+  border-radius: 50%;
+
+
+
+
+
+
+.app-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.filter-header i {
+  transition: 0.3s;
+}
+.filter-content {
+  display: none;
+  margin-top: 8px;
+}
+.neo2-section.active .filter-content {
+  display: block;
+}
+.neo2-section.active .filter-header i {
+  transform: rotate(180deg);
+}
+@media (max-width: 1000px) {
+            .mcsection {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 50px;
+            }
+            .applepage {
+                padding: 1rem;
+            }
+            .mccard {
+                padding: 1.2rem;
+            }
+            .mctitle {
+                font-size: 1.6rem;
+                margin-left: 0px;
+                align-items: center;
+                text-align: center;
+            }
+            .footer-topi {
+                grid-template-columns: 2fr 2fr;
+                gap: 1rem;
+            }
+            .app-section {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+@media (min-width: 600px) {
+            .neo2-container {
+                padding: 24px;
+                gap: 24px;
+            }
+            .neo2-grid {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 20px;
+            }
+            .neo2-card {
+                padding: 20px 16px 18px;
+                
+            }
+            .neo2-title {
+                font-size: 15px;
+            }
+            .neo2-price {
+                font-size: 20px;
+            }
+        }
+        @media(min-width: 1023px) {
+            .neo2-container {
+                flex-direction: row;
+                align-items: flex-start;
+                padding: 30px;
+                gap: 28px;
+            }
+            .neo2-filter {
+                width: 280px;
+                position: sticky;
+                top: 20px;
+                flex-shrink: 0;
+            }
+            .neo2-products {
+                width: auto;
+            }
+            .neo2-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 24px;
+            }
+        }
+        @media (min-width: 1300px) {
+            }
+            .neo2-filter {
+                width: 300px;
+            }
+        @media (max-width: 480px) {
+            .neo2-container {
+                padding: 12px;
+            }
+            .neo2-filter {
+                padding: 14px;
+            }
+          
+            .neo2-price {
+                font-size: 20px;
+            }
+            .neo2-title {
+                font-size: 15px;
+            }
+            .neo2-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .result-count {
+                font-size: 13px;
+            }
+            .neo2-sort {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    @media (max-width: 1023px) {
+      .neo2-filter {
+        display: none 
+      }
+      .neo2-container {
+        gap: 0;
+      }
+      .neo2-products {
+        width: 100%;
+      }
+      body {
+        padding: 14px;
+      }
+@media (max-width: 768px) {
+  .neo2-card {
+      display: flex;
+    flex-direction: row;   
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+  }
+  .neo2-card img {
+    width: 80px;
+    height: auto;
+    flex-shrink: 0;
+    text-align: left;
+  }
+  .neo2-content {
+    flex: 1;
+    text-align: right;
+  }
+  .neo2-title {
+    font-size: 14px;
+    margin: 0;
+  }
+  .neo2-price {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+}
+    }
+@media (max-width: 768px) {
+  .neo2-card {
+    display: flex ;
+    flex-direction: row ;   
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+  }
+  .neo2-img {
+    width: 90px;
+    height: auto;
+    flex-shrink: 0;
+    display: block;
+  }
+  .neo2-card {
+  border: 2px solid red;
+}
+  .neo2-content {
+    flex: 1;
+    text-align: left;
+  }
+}
+@media (max-width: 1000px) {
+  .neo2-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .neo2-card {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+  } 
+  .neo2-card img {
+    width: 70px;   
+    height: auto;
+  }  
+  .neo2-content {
+    flex: 1;
+  }
+  .neo2-title {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  .neo2-price {
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
+@media (max-width: 1000px) {
+
+
+.bluecontainer{
+  grid-template-columns: repeat(4, 4fr);
+    margin-left: 0;
+    display: none;
+}
+  .left-boxslider h1 {
+    font-size: 24px;
+  }
+
+  .subtextslider {
+    font-size: 20px;
+  }
+
  
+  .offer-barfreeinstallation h2 {
+    font-size: 40px;
+  }
+
+
+  .containerac1-section {
+    grid-template-columns:  repeat(3, 1fr);
+  }
+
+
+  .featurecontainer {
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 0;
+  }
+
+  
+  .starbox {
+    grid-template-columns: repeat(1, 1fr);
+  
+  }
+.starbox {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
 }
 
 
@@ -1090,6 +1588,145 @@ width: 100%;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 body {
     background-color: #f5f5f5;
@@ -1130,155 +1767,7 @@ body {
   font-size: 20px;
   margin-bottom: 15px;
 }
-.bannerneo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #ffffff;
-    padding: 40px 60px;
-    margin: 30px;
-    border-radius: 15px;
-    text-align: center;
-    justify-content: center;
-}
-.iPhone17-logo {
-  display: flex;
-  gap: 10px;
-  font-size: 35px;
-  font-weight: 600;
-  justify-content: center;
-}
-.contentneo h1 {
-    font-size: 50px;
-    margin: 10px 0;
-}
-.gradient-textneo {
-    background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;  
-}
-.buy-btnneo {
-  padding: 12px 25px;
-  border-radius: 25px;
-  border: 1px solid #000;
-  background-color: transparent;
-  color:black;
-  font-size: 20px;
-  margin-bottom: 15px;
-}
 
-  .bannerair {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #ffffff;
-    padding: 40px 60px;
-    margin: 30px;
-    border-radius: 15px;
-    text-align: center;
-    justify-content: center;
-}
-.iPhone17-logo {
-  display: flex;
-  gap: 10px;
-  font-size: 35px;
-  font-weight: 600;
-  justify-content: center;
-}
-.contentair h1 {
-    font-size: 50px;
-    margin: 10px 0;
-}
-.gradient-textair {
-    background: black;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;  
-}
-.hhh{
-  font-size: 20px;
- 
-}
-.buy-btnair {
-  padding: 12px 25px;
-  border-radius: 25px;
-  border: 1px solid #000;
-  background-color: transparent;
-  color:black;
-  font-size: 20px;
-  margin-bottom: 15px;
-}
-.bannerpro {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #ffffff;
-    padding: 40px 60px;
-    margin: 30px;
-    border-radius: 15px;
-    text-align: center;
-    justify-content: center;
-}
-.iPhone17-logo {
-  display: flex;
-  gap: 10px;
-  font-size: 35px;
-  font-weight: 600;
-  justify-content: center;
-}
-.contentpro h1 {
-    font-size: 50px;
-    margin: 10px 0;
-}
-.gradient-textpro {
-    background: linear-gradient(to right, rgb(95, 91, 133), rgb(87, 87, 129), rgb(255, 255, 255));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;  
-}
-.buy-btnpro {
-  padding: 12px 25px;
-  border-radius: 25px;
-  border: 1px solid #000;
-  background-color: transparent;
-  color:black;
-  font-size: 20px;
-  margin-bottom: 15px;
-}
-.banner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #ffffff;
-    padding: 40px 60px;
-    margin: 30px;
-    border-radius: 15px;
-    text-align: center;
-    justify-content: center;
-}
-.iPhone17-logo {
-  display: flex;
-  gap: 10px;
-  font-size: 35px;
-  font-weight: 600;
-  justify-content: center;
-}
-.content h1 {
-    font-size: 50px;
-    margin: 10px 0;
-}
-.gradient-text {
-    background: linear-gradient(to right, purple, blue, green);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;  
-}
-.buy-btn {
-  padding: 12px 25px;
-  border-radius: 25px;
-  border: 1px solid #000;
-  background-color: transparent;
-  color:black;
-  font-size: 20px;
-  margin-bottom: 15px;
-}
 .container {
   width: 90%;
   margin: 40px auto;
@@ -1370,7 +1859,7 @@ margin: 0 0 20px;
   margin: 0 0 20px;
   font-size: 35px;
 }
- .button-aww {
+.buy-btnaw {
   padding: 12px 25px;
   border-radius: 25px;
   border: 1px solid #000;
@@ -1401,7 +1890,6 @@ margin: 0 0 20px;
   font-size: 20px;
   margin-bottom: 15px;
 }
-
 .left h1 {
   font-size: 45px;
   margin-bottom: 20px;
@@ -1510,39 +1998,28 @@ margin: 10px 0;
   padding: 30px 50px;
 }
 
-
 .footer-topi {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
 .footer-columni {
   width: 22%;
 }
-
 .footer-columni h4 {
   margin-bottom: 10px;
   font-size: 20px;
 }
-
 .footer-columni ul {
   list-style: none;
   padding: 0;
 }
-
 .footer-columni li {
   margin-bottom: 6px;
   font-size: 18px;
   color:rgba(0, 0, 0, .65);;
   font-weight: bold;
 }
-
-
-
-
-
-
 .app-section {
   display: flex;
   justify-content: space-between;
@@ -1552,7 +2029,6 @@ margin: 10px 0;
   margin-top: 20px;
   flex-wrap: wrap;
 }
-
 .app-left {
   display: flex;
   align-items: center;
@@ -1588,16 +2064,13 @@ margin: 10px 0;
   font-size: 20px;
   font-weight: bold;
 }
-
 .disclaimer {
   margin-top: 20px;
 }
-
 .disclaimer h4 {
   margin-bottom: 5px;
   font-size: 20px;
 }
-
 .disclaimer p {
   font-size: 18px;
   color: #000000A6;
@@ -1618,267 +2091,6 @@ margin: 10px 0;
 color: #000000;
 font-size: 14px;
  -webkit-line-clamp: 2;
-}
-.applepage{
-display: flex;
-  align-items: center;
-  justify-content:space-between;
-  border-radius: 0;
-  margin: 8px 0px;
-  padding: 12px;
-}
-.Appledevices h2{
-font-size:16px;
-color: #141414;
-font-weight: 900;
-letter-spacing: -.48px;
-line-height: 20px;
-justify-content: left;
-margin-left: 100px;
-margin-bottom: 30px;  
-}
-.mcsection{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  padding: 20px;
-}
-.mccard{
- background: #fff;
-  border-radius: 12px;
-  padding: 40px;
-  transition: 0.3s;
-  border: 1px solid #eee;  
-}
-.mccard img{
-  display: block;
-  margin: 15px auto;  
-  justify-content: center;
-  justify-items: center;
-}
-.mctitle{
-  font-size: large;
-  font-weight: bolder;
-  justify-content: center;
-  justify-items: center;
-  margin-bottom: 15px;
-  color: #000000;
-  margin-left: 70px;
-  gap: 20px;
-}
-.macbuy-btn {
-  padding: 12px 25px;
-  border-radius: 40px;
-  border: 1px solid #a22525;
-  background-color: transparent;
-  color:rgb(177, 30, 30);
-  font-size: 20px;
-  margin-bottom: 15px;
-}
-.mcprice {
-  text-align: center;
-  margin: 10px 0;
-}
-.mccard button {
-  display: block;
-  margin: 10px auto;   
-}
-.macbuy-btn{
-  padding: 10px 20px;
-  border-radius: 20px;
-  border: none;
-  background-color: #0071e3;  
-  color: white;
-  font-size: 14px;
-  cursor: pointer;
-}
-.neo2-container {  
-  display: flex;
-  gap: 20px;
-  padding: 30px;
-  background: #f1f3f6;
-  font-family: Arial, sans-serif;
-}
-
-.neo2-filter {
-  width: 260px;
-  background: #fff;
-  padding: 15px;
-  border-radius: 8px;
-}
-
-.neo2-count {
-  background: blue;
-  color: #fff;
-  padding: 2px 8px;
-  border-radius: 50%;
-  font-size: 12px;
-}
-.neo2-chip {
-  background: #dff3ec;
-  padding: 6px 10px;
-  border-radius: 20px;
-  display: inline-block;
-  margin: 10px 0;
-}
-.neo2-section {
-  margin-top: 20px;
-}
-.neo2-section.model-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr; 
-  gap: 6px 10px;
-}
-.neo2-section.model-grid h4 {
-  grid-column: span 2;
-  margin-bottom: 8px;
-}
-.neo2-section label {
-  font-size: 13px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-.neo2-inputs {
-  display: flex;
-  gap: 10px;
-  margin: 10px 0;
-}
-.neo2-inputs input {
-  width: 100%;
-  padding: 5px;
-}
-.neo2-range-label {
-  display: flex;
-  justify-content: space-between;
-  font-size: 12px;
-  color: gray;
-}
-.neo2-products {
-  flex: 1;
-}
-.neo2-header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-.neo2-sort {
-  border: 1px solid #ccc;
-  padding: 6px 15px;
-  border-radius: 20px;
-  background: white;
-  cursor: pointer;
-}
-.neo2-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-.neo2-card {
-  background: #fff;
-  padding: 30px 15px 15px;
-  border-radius: 10px;
-  position: relative;
-  text-align: left;
-}
-
-.neo2-card img {
-  width: 100%;
-  height: 120px;
-  object-fit: contain;
-}
-.neo2-badge {
-  position: absolute;
-  top: 5px;
-  left: 10px;
-  background: #008cba;
-  color: white;
-  padding: 4px 8px;
-  font-size: 12px;
-  border-radius: 4px;
-}
-.neo2-heart {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  color: gray;
-  cursor: pointer;
-}
-.neo2-title {
-  font-size: 14px;
-  margin: 10px 0;
-  -webkit-line-clamp: 2;
-color: #000;
-}
-.neo2-mrp {
-  text-decoration: line-through;
-  color: gray;
-  font-size: 12px;
-  display: block;
-  margin-left: 0;
-  padding-left: 0;
-  text-align: start;
-}
-
-.neo2-compare {
-  margin-top: 4px;
-  border: none;
-  background: none;
-  color: blue;
-  font:colo;
-  cursor: pointer;
-   margin-left: 0;
-  padding-left: 0;
-  text-align: left;
-}
-.neo2-compare {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 5px;
-  cursor: pointer;
-  color: #434444;  
-  font-size: 14px;
-  font-weight: bold;
-}
-.neo2-off {
-  color: #388e3c;         
-  font-size: 13px;
-  font-weight: bold;
-  margin-left: 8px;
-}
-.compare-icon {
-  width: 20px;
-  height: 20px;
-  background: #2874f0;
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  font-weight: bold;
-}
-.filter-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-}
-.filter-header i {
-  transition: 0.3s;
-}
-.filter-content {
-  display: none;
-  margin-top: 8px;
-}
-
-.neo2-section.active .filter-content {
-  display: block;
-}
-
-.neo2-section.active .filter-header i {
-  transform: rotate(180deg);
 }
 .body{
   font-family: Arial, sans-serif;
