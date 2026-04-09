@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Reliance Digital | Login or Sign Up Popup</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', 'Inter', system-ui, -apple-system, 'Roboto', 'Helvetica Neue', sans-serif;
+      background: linear-gradient(145deg, #e0e7f0 0%, #cbd5e1 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      position: relative;
+    }
+
+    /* main storefront demo card (optional background context) */
+    .store-preview {
+      max-width: 1100px;
+      width: 100%;
+      background: #ffffffcc;
+      backdrop-filter: blur(2px);
+      border-radius: 2rem;
+      padding: 2rem;
+      box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.25);
+    }
+
+    .dummy-shop {
+      text-align: center;
+      color: #1e293b;
+    }
+
+    .dummy-shop h2 {
+      font-weight: 600;
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .dummy-shop p {
+      color: #334155;
+      margin-bottom: 2rem;
+    }
+
+    .show-popup-btn {
+      background: #0077b6;
+      border: none;
+      padding: 14px 32px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: white;
+      border-radius: 60px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .show-popup-btn:hover {
+      background: #023e8a;
+      transform: scale(0.98);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* ---------- POPUP OVERLAY (modal) ---------- */
+    .popup-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(5px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0.2s, opacity 0.25s ease-in-out;
+    }
+
+    .popup-overlay.active {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    /* Popup card - exactly matches the design: clean white card, rounded corners, shadow */
+    .popup-card {
+      max-width: 480px;
+      width: 90%;
+      background: #ffffff;
+      border-radius: 32px;
+      box-shadow: 0 30px 50px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(0, 0, 0, 0.02);
+      transition: transform 0.2s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+      transform: scale(0.97);
+    }
+
+    .popup-overlay.active .popup-card {
+      transform: scale(1);
+    }
+
+    /* close button (x) */
+    .popup-close {
+      position: absolute;
+      top: 20px;
+      right: 24px;
+      background: #f1f5f9;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: #1e293b;
+      border: none;
+      outline: none;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    }
+
+    .popup-close:hover {
+      background: #e2e8f0;
+      transform: rotate(90deg);
+    }
+
+    /* inner content padding */
+    .popup-content {
+      padding: 40px 32px 44px;
+      position: relative;
+    }
+
+    /* heading */
+    .popup-content h2 {
+      font-size: 1.85rem;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
+
+    .welcome-tagline {
+      color: #475569;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      margin-bottom: 32px;
+      border-left: 3px solid #0077b6;
+      padding-left: 12px;
+      font-weight: 400;
+    }
+
+    /* form group */
+    .form-group {
+      margin-bottom: 28px;
+    }
+
+    .input-label {
+      display: block;
+      font-weight: 600;
+      font-size: 0.85rem;
+      color: #1e293b;
+      margin-bottom: 8px;
+      letter-spacing: 0.3px;
+    }
+
+    /* mobile number container with country code +91 */
+    .phone-input-wrapper {
+      display: flex;
+      align-items: center;
+      background: #f8fafc;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 60px;
+      transition: all 0.2s;
+      padding: 4px 8px 4px 20px;
+    }
+
+    .phone-input-wrapper:focus-within {
+      border-color: #0077b6;
+      box-shadow: 0 0 0 3px rgba(0, 119, 182, 0.2);
+      background: #ffffff;
+    }
+
+    .country-code {
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: #0f172a;
+      background: transparent;
+      padding-right: 8px;
+      border-right: 1.5px solid #cbd5e1;
+      margin-right: 12px;
+    }
+
+    .phone-input {
+      flex: 1;
+      border: none;
+      background: transparent;
+      padding: 16px 0 16px 4px;
+      font-size: 1rem;
+      font-weight: 500;
+      outline: none;
+      color: #0f172a;
+    }
+
+    .phone-input::placeholder {
+      color: #94a3b8;
+      font-weight: 400;
+      font-size: 0.95rem;
+    }
+
+    /* terms & conditions text */
+    .terms-text {
+      font-size: 0.75rem;
+      color: #475569;
+      margin: 20px 0 28px;
+      line-height: 1.45;
+      text-align: left;
+    }
+
+    .terms-text a {
+      color: #0077b6;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .terms-text a:hover {
+      color: #023e8a;
+      text-decoration: underline;
+    }
+
+    /* proceed button */
+    .proceed-btn {
+      width: 100%;
+      background: #0077b6;
+      border: none;
+      padding: 16px 20px;
+      border-radius: 60px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: white;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 6px 14px rgba(0, 119, 182, 0.25);
+      margin-bottom: 8px;
+    }
+
+    .proceed-btn:hover {
+      background: #005f8c;
+      transform: translateY(-1px);
+      box-shadow: 0 10px 18px rgba(0, 119, 182, 0.3);
+    }
+
+    .proceed-btn:active {
+      transform: translateY(1px);
+    }
+
+    /* small footnote for demo */
+    .demo-note {
+      text-align: center;
+      font-size: 0.7rem;
+      color: #94a3b8;
+      margin-top: 24px;
+      border-top: 1px solid #eef2f6;
+      padding-top: 20px;
+    }
+
+    /* responsiveness */
+    @media (max-width: 500px) {
+      .popup-content {
+        padding: 32px 24px 36px;
+      }
+      .popup-content h2 {
+        font-size: 1.6rem;
+      }
+      .phone-input-wrapper {
+        padding: 2px 8px 2px 16px;
+      }
+      .phone-input {
+        padding: 14px 0;
+      }
+    }
+
+    /* simple toast or alert simulation */
+    .toast-msg {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%) scale(0.9);
+      background: #1e293b;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 60px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      z-index: 1100;
+      opacity: 0;
+      transition: opacity 0.2s;
+      pointer-events: none;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      white-space: nowrap;
+    }
+
+    .toast-msg.show-toast {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+<div class="store-preview">
+  <div class="dummy-shop">
+    <h2>📱 Reliance Digital</h2>
+    <p>India's most trusted electronics store — exclusive deals, instant savings & top brands.</p>
+    <button class="show-popup-btn" id="openPopupBtn">🔓 Log in / Sign up</button>
+  </div>
+</div>
+
+<!-- POPUP MODAL STRUCTURE - exactly matches the design: "Log in or Sign up", mobile number with +91, Terms & Privacy, Proceed button -->
+<div class="popup-overlay" id="popupOverlay">
+  <div class="popup-card">
+    <button class="popup-close" id="closePopupBtn" aria-label="Close popup">✕</button>
+    <div class="popup-content">
+      <h2>Log in or Sign up</h2>
+      <div class="welcome-tagline">
+        Welcome to Reliance Digital, India's most trusted electronics store! Let's get you started.
+      </div>
+
+      <div class="form-group">
+        <span class="input-label">Enter your Mobile Number</span>
+        <div class="phone-input-wrapper">
+          <span class="country-code">+91</span>
+          <input type="tel" class="phone-input" id="mobileNumberInput" placeholder="98765 43210" autocomplete="tel" maxlength="10" inputmode="numeric">
+        </div>
+      </div>
+
+      <div class="terms-text">
+        By continuing, you agree to our <a href="#" id="termsLink">Terms of Use</a> and acknowledge that you have read our <a href="#" id="privacyLink">Privacy Policy</a>
+      </div>
+
+      <button class="proceed-btn" id="proceedBtn">Proceed</button>
+      <div class="demo-note">
+        ⚡ One-time OTP will be sent for verification (demo)
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="toastMsg" class="toast-msg">✨ Welcome to Reliance Digital experience</div>
+
+<script>
+  (function() {
+    // DOM elements
+    const overlay = document.getElementById('popupOverlay');
+    const openBtn = document.getElementById('openPopupBtn');
+    const closeBtn = document.getElementById('closePopupBtn');
+    const proceedBtn = document.getElementById('proceedBtn');
+    const mobileInput = document.getElementById('mobileNumberInput');
+    const termsLink = document.getElementById('termsLink');
+    const privacyLink = document.getElementById('privacyLink');
+    const toastEl = document.getElementById('toastMsg');
+
+    let toastTimeout = null;
+    function showToast(message, duration = 2500) {
+      if (toastTimeout) clearTimeout(toastTimeout);
+      toastEl.textContent = message || '✨ Welcome to Reliance Digital';
+      toastEl.classList.add('show-toast');
+      toastTimeout = setTimeout(() => {
+        toastEl.classList.remove('show-toast');
+      }, duration);
+    }
+
+
+    function openPopup() {
+      overlay.classList.add('active');
+      // optional: focus input when opened
+      setTimeout(() => {
+        if (mobileInput) mobileInput.focus();
+      }, 100);
+
+    }
+
+    function closePopup() {
+      overlay.classList.remove('active');
+    }
+
+
+    function validateMobileNumber(numberStr) {
+  
+      const cleaned = numberStr.replace(/\s/g, '');
+   
+      const isValid = /^[6-9]\d{9}$/.test(cleaned);
+      return { isValid, cleaned };
+    }
+
+   
+    function handleProceed() {
+      let rawMobile = mobileInput.value.trim();
+      if (rawMobile === "") {
+        showToast("📱 Please enter your mobile number", 2000);
+        mobileInput.focus();
+        return;
+      }
+
+      const { isValid, cleaned } = validateMobileNumber(rawMobile);
+      if (!isValid) {
+        showToast("❌ Enter a valid 10-digit mobile number (e.g. 9876543210)", 2800);
+        mobileInput.classList.add('error-shake');
+        setTimeout(() => {
+          mobileInput.classList.remove('error-shake');
+        }, 400);
+        mobileInput.focus();
+        return;
+      }
+
+    
+      const fullNumber = `+91 ${cleaned}`;
+      showToast(`✅ OTP sent to ${fullNumber} (demo sign-in)`, 3000);
+      
+      
+      setTimeout(() => {
+        closePopup();
+       
+        mobileInput.value = '';  
+      }, 1200);
+    }
+
+   
+    if (openBtn) {
+      openBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        openPopup();
+      });
+    }
+
+    if (closeBtn) {
+      closeBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        closePopup();
+      });
+    }
+
+   
+    if (overlay) {
+      overlay.addEventListener('click', (e) => {
+        // if the clicked element is the overlay itself (background), close it.
+        if (e.target === overlay) {
+          closePopup();
+        }
+      });
+    }
+
+
+    if (proceedBtn) {
+      proceedBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        handleProceed();
+      });
+    }
+
+   
+    if (mobileInput) {
+      mobileInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          handleProceed();
+        }
+      });
+    }
+
+
+    if (termsLink) {
+      termsLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        showToast("📜 Terms of Use: This is a demo experience. By using Reliance Digital you agree to our policies.", 3500);
+      });
+    }
+
+    if (privacyLink) {
+      privacyLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        showToast("🔒 Privacy Policy: Your data is protected with industry standards (demo flow).", 3500);
+      });
+    }
+
+
+    const styleShake = document.createElement('style');
+    styleShake.textContent = `
+      .error-shake {
+        animation: shakeInput 0.35s ease-in-out 0s 2;
+        border-color: #e11d48 !important;
+      }
+      @keyframes shakeInput {
+        0% { transform: translateX(0); }
+        25% { transform: translateX(-5px); }
+        75% { transform: translateX(5px); }
+        100% { transform: translateX(0); }
+      }
+      .phone-input-wrapper.error-shake {
+        border-color: #e11d48;
+      }
+    `;
+    document.head.appendChild(styleShake);
+
+    
+    const originalAddActive = openPopup;
+    window.openPopup = openPopup;
+    // but we override safe: 
+    const superOpen = openPopup;
+    window.openPopup = function() {
+      if (mobileInput) mobileInput.classList.remove('error-shake');
+      const wrapper = mobileInput?.closest('.phone-input-wrapper');
+      if (wrapper) wrapper.classList.remove('error-shake');
+      superOpen();
+    };
+    
+    const enhancedOpen = function() {
+      if (mobileInput) mobileInput.classList.remove('error-shake');
+      const wrapper = mobileInput?.closest('.phone-input-wrapper');
+      if (wrapper) wrapper.classList.remove('error-shake');
+      overlay.classList.add('active');
+      setTimeout(() => mobileInput?.focus(), 100);
+    };
+   
+    if (openBtn) {
+      openBtn.removeEventListener('click', openPopup);
+      openBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        enhancedOpen();
+      });
+    }
+
+    window.enhancedOpenPopup = enhancedOpen;
+   
+  })();
+</script>
+
+</body>
+</html>
